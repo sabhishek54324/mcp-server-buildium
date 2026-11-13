@@ -20,8 +20,8 @@ BUILDIUM_CLIENT_SECRET=...
 ```
 
 Use a **read-only** Buildium API key (the server has write tools), and the sandbox key first.
-`BUILDIUM_BASE_URL` defaults to the sandbox, `https://apisandbox.buildium.com`. Set it to
-`https://api.buildium.com` for live data. Optional: `BUILDIUM_CATEGORIES=leases,rentals,tasks` to enable
+`BUILDIUM_BASE_URL` defaults to the sandbox, `https://apisandbox.buildium.com`. For live data add the line
+`BUILDIUM_BASE_URL=https://api.buildium.com` to this same file (no `/v1`, no trailing slash). Optional: `BUILDIUM_CATEGORIES=leases,rentals,tasks` to enable
 only some tool categories.
 
 `GATE_ENV_FILE` (default `/etc/buildium-mcp/gate.env`):

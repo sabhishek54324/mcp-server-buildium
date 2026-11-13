@@ -18,9 +18,9 @@ services:
     restart: unless-stopped
     env_file:
       - ${BUILDIUM_ENV_FILE:-/etc/buildium-mcp/buildium.env}
+    # BUILDIUM_BASE_URL comes from the env file above. If the file does not set it, the image default
+    # (the Buildium SANDBOX, see the Dockerfile) is used. Live is https://api.buildium.com (no /v1).
     environment:
-      # Sandbox first. Live is https://api.buildium.com (no /v1).
-      BUILDIUM_BASE_URL: ${BUILDIUM_BASE_URL:-https://apisandbox.buildium.com}
       MCP_PORT: "8000"
     expose:
       - "8000"
