@@ -1,0 +1,15 @@
+{
+	auto_https off
+}
+
+:8080 {
+	@ok header Authorization "Bearer {$MCP_GATE_TOKEN}"
+	handle @ok {
+		reverse_proxy buildium-mcp:8000 {
+			flush_interval -1
+		}
+	}
+	handle {
+		respond "Unauthorized" 401
+	}
+}
