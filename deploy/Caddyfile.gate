@@ -1,8 +1,27 @@
 {
-	auto_https off
+	# Redirects off: the plain-HTTP block below stays as it is. "tls internal" below makes Caddy sign
+	# the HTTPS certificate with its own private certificate authority (see deploy/README.md).
+	auto_https disable_redirects
+	skip_install_trust
 }
 
+# Plain HTTP on the Docker bridge (kept for the old route and for tests).
 :8080 {
+	@ok header Authorization "Bearer {$MCP_GATE_TOKEN}"
+	handle @ok {
+		reverse_proxy buildium-mcp:8000 {
+			flush_interval -1
+		}
+	}
+	handle {
+		respond "Unauthorized" 401
+	}
+}
+
+# HTTPS for clients that require it (NemoClaw's built-in MCP command). The name must resolve to the
+# bridge address on the host (for example an /etc/hosts line) and the client must trust Caddy's root CA.
+https://buildium-mcp.ember.internal:8443 {
+	tls internal
 	@ok header Authorization "Bearer {$MCP_GATE_TOKEN}"
 	handle @ok {
 		reverse_proxy buildium-mcp:8000 {

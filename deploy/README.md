@@ -43,3 +43,15 @@ The gate listens on `${MCP_BIND:-172.17.0.1}:8767`. Without the token it answers
 ```bash
 git pull && docker compose -f deploy/docker-compose.prod.yml up -d --build
 ```
+
+## HTTPS (for clients that require it)
+
+The gate also answers on `https://buildium-mcp.ember.internal:8443/mcp` with the same token rule. The certificate comes
+from Caddy's own private certificate authority (`tls internal`), kept in the `caddy_data` volume.
+
+1. Make the name resolve on the host to the bridge address: add `172.17.0.1 buildium-mcp.ember.internal` to `/etc/hosts`.
+2. Start or update: `docker compose -f deploy/docker-compose.prod.yml up -d --build`.
+3. Export the root certificate (this is a public certificate, not a secret):
+   `docker cp buildium-mcp-gate-1:/data/caddy/pki/authorities/local/root.crt ~/buildium-mcp-root-ca.crt`
+4. Tell clients to trust it. For NemoClaw, set `NEMOCLAW_CORPORATE_CA_BUNDLE=$HOME/buildium-mcp-root-ca.crt` **before** onboarding the sandbox.
+5. Test: `curl --cacert ~/buildium-mcp-root-ca.crt -s -o /dev/null -w '%{http_code}\n' -X POST https://buildium-mcp.ember.internal:8443/mcp` should print `401` (no token).
