@@ -50,6 +50,35 @@ class BuildiumConfig(BaseSettings):
         ),
     )
 
+    tool_access: str = Field(
+        default="all",
+        description=(
+            "'all' (default): every tool, reads and writes. 'read': only get_* and list_* tools are "
+            "registered, so writes do not exist on this server at all."
+        ),
+    )
+    tool_tags: str | None = Field(
+        default=None,
+        description=(
+            "Comma-separated Buildium API areas (the docs' tags, e.g. 'Leases,Lease Transactions,Work Orders') "
+            "to keep among the generated tools. Not set: all areas. Hand-written tools are not affected."
+        ),
+    )
+
+    @field_validator("tool_access")
+    @classmethod
+    def _check_access(cls, value: str) -> str:
+        value = (value or "all").strip().lower()
+        if value not in ("all", "read"):
+            raise ValueError("tool_access must be 'all' or 'read'")
+        return value
+
+    def allowed_tags(self) -> set[str] | None:
+        """Generated-tool areas to keep (lower case), or None for all."""
+        if not self.tool_tags:
+            return None
+        return {t.strip().lower() for t in self.tool_tags.split(",") if t.strip()}
+
     @field_validator("base_url", mode="before")
     @classmethod
     def _default_empty_base_url(cls, value: object) -> object:

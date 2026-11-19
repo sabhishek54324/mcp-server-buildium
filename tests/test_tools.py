@@ -244,7 +244,9 @@ async def test_write_tool_refuses_invalid_body(
 async def test_all_tools_registered(config: BuildiumConfig) -> None:
     async with Client(create_server(config)) as mcp:
         tools = await mcp.list_tools()
-    assert len(tools) == 81
+    from mcp_server_buildium.tools.generated import GENERATED_TOOL_COUNT
+
+    assert len(tools) == 81 + GENERATED_TOOL_COUNT  # 81 hand-written + one per other Buildium operation
     read = {name for name, *_ in READ_TOOLS}
     assert read <= {tool.name for tool in tools}
 
@@ -290,7 +292,9 @@ async def test_write_tools_call_an_existing_sdk_method(
                 if attr.endswith("Message"):
                     monkeypatch.setattr(module, attr, dict)
 
-    async with Client(create_server(config, client)) as mcp:
+    # The hand-written tools only; the generated ones are covered in test_generated_tools.py.
+    hand = config.model_copy(update={"categories": ",".join(c for c in CATEGORIES if c != "all_endpoints")})
+    async with Client(create_server(hand, client)) as mcp:
         listed = await mcp.list_tools()
         write_tools = [t for t in listed if t.name.split("_")[0] in {"create", "update"}]
         assert len(write_tools) == 39

@@ -1,5 +1,6 @@
 """Buildium API client using the generated SDK."""
 
+from typing import Any
 import logging
 from types import TracebackType
 
@@ -71,6 +72,50 @@ class BuildiumClient:
         self.bills_api = BillsApi(self._api_client)
         self.files_api = FilesApi(self._api_client)
         self.bank_accounts_api = BankAccountsApi(self._api_client)
+
+    async def raw_request(
+        self,
+        method: str,
+        path: str,
+        path_params: dict[str, Any] | None = None,
+        query: dict[str, Any] | None = None,
+        body: Any = None,
+    ) -> dict[str, Any]:
+        """Call any Buildium API path directly (used by the generated tools).
+
+        Same host and API key headers as the SDK. Retries twice on 429 (Buildium's rate limit),
+        waiting for Retry-After (at most 30 s). A list response becomes {"items": [...], "count": n};
+        an empty response becomes {}. Errors raise ValueError with the status and Buildium's message;
+        the API key is never included.
+        """
+        import asyncio
+
+        import httpx
+
+        url_path = path
+        for key, value in (path_params or {}).items():
+            url_path = url_path.replace("{" + key + "}", str(value))
+        params = {k: v for k, v in (query or {}).items() if v is not None}
+        headers = {
+            "x-buildium-client-id": self.config.client_id,
+            "x-buildium-client-secret": self.config.client_secret.get_secret_value(),
+            "Accept": "application/json",
+        }
+        async with httpx.AsyncClient(base_url=self._sdk_config.host, timeout=60) as http:
+            for attempt in range(3):
+                response = await http.request(method, url_path, params=params, json=body, headers=headers)
+                if response.status_code != 429 or attempt == 2:
+                    break
+                wait = min(float(response.headers.get("Retry-After", "2") or 2), 30.0)
+                await asyncio.sleep(wait)
+        if response.status_code >= 400:
+            raise ValueError(f"Buildium {method} {path} failed: HTTP {response.status_code}: {response.text[:500]}")
+        if not response.content:
+            return {}
+        data = response.json()
+        if isinstance(data, list):
+            return {"items": data, "count": len(data)}
+        return data if isinstance(data, dict) else {"result": data}
 
     def _build_sdk_config(self) -> Configuration:
         """Build the SDK configuration.

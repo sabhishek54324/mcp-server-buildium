@@ -1,0 +1,2711 @@
+[
+ {
+  "tool": "get_application_transactions",
+  "method": "GET",
+  "path": "/v1/applications/{applicationId}/transactions",
+  "operationId": "ExternalApiApplicationLedgerTransactions_GetApplicationTransactions",
+  "tag": "Application Transactions"
+ },
+ {
+  "tool": "get_committees",
+  "method": "GET",
+  "path": "/v1/associations/{associationId}/committees",
+  "operationId": "ExternalApiAssociationCommittees_GetCommittees",
+  "tag": "Committees"
+ },
+ {
+  "tool": "get_ownership_account_ledger",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/transactions",
+  "operationId": "ExternalApiOwnershipAccountsLedger_GetOwnershipAccountLedger",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "get_architectural_requests",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/architecturalrequests",
+  "operationId": "ExternalApiAssociationArchitecturalRequests_GetArchitecturalRequests",
+  "tag": "Architectural Requests"
+ },
+ {
+  "tool": "create_architectural_request_async",
+  "method": "POST",
+  "path": "/v1/associations/ownershipaccounts/architecturalrequests",
+  "operationId": "ExternalApiAssociationArchitecturalRequests_CreateArchitecturalRequestAsync",
+  "tag": "Architectural Requests"
+ },
+ {
+  "tool": "get_inventory_assets",
+  "method": "GET",
+  "path": "/v1/inventoryassets",
+  "operationId": "ExternalApiInventoryAsset_GetInventoryAssets",
+  "tag": "Inventory and Assets"
+ },
+ {
+  "tool": "get_lease_ledgers",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/transactions",
+  "operationId": "ExternalApiLeaseLedgerTransactions_GetLeaseLedgers",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "get_all_users",
+  "method": "GET",
+  "path": "/v1/users",
+  "operationId": "ExternalApiUsers_GetAllUsers",
+  "tag": "Administration"
+ },
+ {
+  "tool": "get_lease_ledger_transaction_by_id",
+  "method": "GET",
+  "path": "/v1/applications/{applicationId}/transactions/{transactionId}",
+  "operationId": "ExternalApiApplicationLedgerTransactions_GetLeaseLedgerTransactionById",
+  "tag": "Application Transactions"
+ },
+ {
+  "tool": "get_committee",
+  "method": "GET",
+  "path": "/v1/associations/{associationId}/committees/{committeeId}",
+  "operationId": "ExternalApiAssociationCommittees_GetCommittee",
+  "tag": "Committees"
+ },
+ {
+  "tool": "get_ownership_account_transaction_by_id",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/transactions/{transactionId}",
+  "operationId": "ExternalApiOwnershipAccountsLedger_GetOwnershipAccountTransactionById",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "get_architectural_request_by_id",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/architecturalrequests/{architecturalRequestId}",
+  "operationId": "ExternalApiAssociationArchitecturalRequests_GetArchitecturalRequestById",
+  "tag": "Architectural Requests"
+ },
+ {
+  "tool": "get_lease_ledger_transaction_by_id_lease_transactions",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/transactions/{transactionId}",
+  "operationId": "ExternalApiLeaseLedgerTransactions_GetLeaseLedgerTransactionById",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "get_listing_for_unit_async",
+  "method": "GET",
+  "path": "/v1/rentals/units/{unitId}/listing",
+  "operationId": "ExternalApiListings_GetListingForUnitAsync",
+  "tag": "Listings"
+ },
+ {
+  "tool": "update_upsert_listings_async",
+  "method": "PUT",
+  "path": "/v1/rentals/units/{unitId}/listing",
+  "operationId": "ExternalApiListings_UpsertListingsAsync",
+  "tag": "Listings"
+ },
+ {
+  "tool": "delete_delist_unit",
+  "method": "DELETE",
+  "path": "/v1/rentals/units/{unitId}/listing",
+  "operationId": "ExternalApiListings_DelistUnit",
+  "tag": "Listings"
+ },
+ {
+  "tool": "get_user_by_id",
+  "method": "GET",
+  "path": "/v1/users/{userId}",
+  "operationId": "ExternalApiUsers_GetUserById",
+  "tag": "Administration"
+ },
+ {
+  "tool": "get_application_outstanding_balances",
+  "method": "GET",
+  "path": "/v1/applications/outstandingbalances",
+  "operationId": "ExternalApiApplicationOutstandingBalances_GetApplicationOutstandingBalances",
+  "tag": "Application Transactions"
+ },
+ {
+  "tool": "get_architectural_request_files_history_paged_async",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/architecturalrequests/{architecturalRequestId}/files",
+  "operationId": "ExternalApiAssociationArchitecturalRequests_GetArchitecturalRequestFilesHistoryPagedAsync",
+  "tag": "Architectural Requests"
+ },
+ {
+  "tool": "get_ownership_account_outstanding_balances",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/outstandingbalances",
+  "operationId": "ExternalApiOwnershipAccountOutstandingBalances_GetOwnershipAccountOutstandingBalances",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "get_all_association_units",
+  "method": "GET",
+  "path": "/v1/associations/units",
+  "operationId": "ExternalApiAssociationUnits_GetAllAssociationUnits",
+  "tag": "Association Units"
+ },
+ {
+  "tool": "create_inventory_asset",
+  "method": "POST",
+  "path": "/v1/inventoryasset",
+  "operationId": "ExternalApiInventoryAsset_CreateInventoryAsset",
+  "tag": "Inventory and Assets"
+ },
+ {
+  "tool": "get_lease_outstanding_balances",
+  "method": "GET",
+  "path": "/v1/leases/outstandingbalances",
+  "operationId": "ExternalApiLeaseOutstandingBalances_GetLeaseOutstandingBalances",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "get_all_listing_contacts",
+  "method": "GET",
+  "path": "/v1/rentals/units/listingcontacts",
+  "operationId": "ExternalApiListingContacts_GetAllListingContacts",
+  "tag": "Listings"
+ },
+ {
+  "tool": "create_listing_contact",
+  "method": "POST",
+  "path": "/v1/rentals/units/listingcontacts",
+  "operationId": "ExternalApiListingContacts_CreateListingContact",
+  "tag": "Listings"
+ },
+ {
+  "tool": "get_all_user_roles",
+  "method": "GET",
+  "path": "/v1/userroles",
+  "operationId": "ExternalApiUserRoles_GetAllUserRoles",
+  "tag": "Administration"
+ },
+ {
+  "tool": "get_application_charges",
+  "method": "GET",
+  "path": "/v1/applications/{applicationId}/charges",
+  "operationId": "ExternalApiApplicationLedgerCharges_GetApplicationCharges",
+  "tag": "Application Transactions"
+ },
+ {
+  "tool": "create_application_ledger_charge",
+  "method": "POST",
+  "path": "/v1/applications/{applicationId}/charges",
+  "operationId": "ExternalApiApplicationLedgerCharges_CreateApplicationLedgerCharge",
+  "tag": "Application Transactions"
+ },
+ {
+  "tool": "get_all_ownership_account_charges",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/charges",
+  "operationId": "ExternalApiOwnershipAccountLedgerCharges_GetAllOwnershipAccountCharges",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "create_charge",
+  "method": "POST",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/charges",
+  "operationId": "ExternalApiOwnershipAccountLedgerCharges_CreateCharge",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "get_association_unit_by_id",
+  "method": "GET",
+  "path": "/v1/associations/units/{unitId}",
+  "operationId": "ExternalApiAssociationUnits_GetAssociationUnitById",
+  "tag": "Association Units"
+ },
+ {
+  "tool": "get_inventory_asset_by_id",
+  "method": "GET",
+  "path": "/v1/inventoryasset/{inventoryAssetId}",
+  "operationId": "ExternalApiInventoryAsset_GetInventoryAssetById",
+  "tag": "Inventory and Assets"
+ },
+ {
+  "tool": "update_inventory_asset",
+  "method": "PUT",
+  "path": "/v1/inventoryasset/{inventoryAssetId}",
+  "operationId": "ExternalApiInventoryAsset_UpdateInventoryAsset",
+  "tag": "Inventory and Assets"
+ },
+ {
+  "tool": "delete_inventory_asset",
+  "method": "DELETE",
+  "path": "/v1/inventoryasset/{inventoryAssetId}",
+  "operationId": "ExternalApiInventoryAsset_DeleteInventoryAsset",
+  "tag": "Inventory and Assets"
+ },
+ {
+  "tool": "get_all_charges",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/charges",
+  "operationId": "ExternalApiLeaseLedgerChargesRead_GetAllCharges",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "create_charge_lease_transactions",
+  "method": "POST",
+  "path": "/v1/leases/{leaseId}/charges",
+  "operationId": "ExternalApiLeaseLedgerChargesWrite_CreateCharge",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "get_listing_contact_by_id",
+  "method": "GET",
+  "path": "/v1/rentals/units/listingcontacts/{listingContactId}",
+  "operationId": "ExternalApiListingContacts_GetListingContactById",
+  "tag": "Listings"
+ },
+ {
+  "tool": "update_listing_contact",
+  "method": "PUT",
+  "path": "/v1/rentals/units/listingcontacts/{listingContactId}",
+  "operationId": "ExternalApiListingContacts_UpdateListingContact",
+  "tag": "Listings"
+ },
+ {
+  "tool": "get_user_role_by_id",
+  "method": "GET",
+  "path": "/v1/userroles/{userRoleId}",
+  "operationId": "ExternalApiUserRoles_GetUserRoleById",
+  "tag": "Administration"
+ },
+ {
+  "tool": "get_application_ledger_charge_by_id",
+  "method": "GET",
+  "path": "/v1/applications/{applicationId}/charges/{transactionId}",
+  "operationId": "ExternalApiApplicationLedgerCharges_GetApplicationLedgerChargeById",
+  "tag": "Application Transactions"
+ },
+ {
+  "tool": "update_application_ledger_charge",
+  "method": "PUT",
+  "path": "/v1/applications/{applicationId}/charges/{transactionId}",
+  "operationId": "ExternalApiApplicationLedgerCharges_UpdateApplicationLedgerCharge",
+  "tag": "Application Transactions"
+ },
+ {
+  "tool": "create_association_ownership_account",
+  "method": "POST",
+  "path": "/v1/associations/ownershipaccounts",
+  "operationId": "ExternalApiOwnershipAccounts_CreateAssociationOwnershipAccount",
+  "tag": "Ownership Accounts"
+ },
+ {
+  "tool": "get_ownership_account_charge_by_id",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/charges/{chargeId}",
+  "operationId": "ExternalApiOwnershipAccountLedgerCharges_GetOwnershipAccountChargeById",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "update_ownership_account_charge",
+  "method": "PUT",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/charges/{chargeId}",
+  "operationId": "ExternalApiOwnershipAccountLedgerCharges_UpdateOwnershipAccountCharge",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "get_charge_by_id",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/charges/{chargeId}",
+  "operationId": "ExternalApiLeaseLedgerChargesRead_GetChargeById",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "update_lease_charge",
+  "method": "PUT",
+  "path": "/v1/leases/{leaseId}/charges/{chargeId}",
+  "operationId": "ExternalApiLeaseLedgerChargesWrite_UpdateLeaseCharge",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "get_lease_move_out_information_by_id",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/moveouts",
+  "operationId": "ExternalApiLeaseMoveOuts_GetLeaseMoveOutInformationById",
+  "tag": "Leases"
+ },
+ {
+  "tool": "create_move_out_data",
+  "method": "POST",
+  "path": "/v1/leases/{leaseId}/moveouts",
+  "operationId": "ExternalApiLeaseMoveOuts_CreateMoveOutData",
+  "tag": "Leases"
+ },
+ {
+  "tool": "create_inactivate_rental_property",
+  "method": "POST",
+  "path": "/v1/rentals/{propertyId}/inactivationrequest",
+  "operationId": "ExternalApiRentalsActiveStatus_InactivateRentalProperty",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "get_asset_service_history",
+  "method": "GET",
+  "path": "/v1/assetservicehistory/{inventoryAssetId}",
+  "operationId": "ExternalApiAssetServiceHistory_GetAssetServiceHistory",
+  "tag": "Inventory and Assets"
+ },
+ {
+  "tool": "create_asset_service_history",
+  "method": "POST",
+  "path": "/v1/assetservicehistory/{inventoryAssetId}",
+  "operationId": "ExternalApiAssetServiceHistory_CreateAssetServiceHistory",
+  "tag": "Inventory and Assets"
+ },
+ {
+  "tool": "get_ownership_account_by_id",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}",
+  "operationId": "ExternalApiOwnershipAccounts_GetOwnershipAccountById",
+  "tag": "Ownership Accounts"
+ },
+ {
+  "tool": "update_association_ownership_account",
+  "method": "PUT",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}",
+  "operationId": "ExternalApiOwnershipAccounts_UpdateAssociationOwnershipAccount",
+  "tag": "Ownership Accounts"
+ },
+ {
+  "tool": "get_lease_move_out_data_by_tenant_id",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/moveouts/{tenantId}",
+  "operationId": "ExternalApiLeaseMoveOuts_GetLeaseMoveOutDataByTenantId",
+  "tag": "Leases"
+ },
+ {
+  "tool": "delete_undo_tenant_moveout",
+  "method": "DELETE",
+  "path": "/v1/leases/{leaseId}/moveouts/{tenantId}",
+  "operationId": "ExternalApiLeaseMoveOuts_UndoTenantMoveout",
+  "tag": "Leases"
+ },
+ {
+  "tool": "create_reactivate_rental_property",
+  "method": "POST",
+  "path": "/v1/rentals/{propertyId}/reactivationrequest",
+  "operationId": "ExternalApiRentalsActiveStatus_ReactivateRentalProperty",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "get_asset_service_history_by_id",
+  "method": "GET",
+  "path": "/v1/assetservicehistory/{inventoryAssetId}/{assetServiceHistoryId}",
+  "operationId": "ExternalApiAssetServiceHistory_GetAssetServiceHistoryById",
+  "tag": "Inventory and Assets"
+ },
+ {
+  "tool": "get_all_association_owners",
+  "method": "GET",
+  "path": "/v1/associations/owners",
+  "operationId": "ExternalApiAssociationOwners_GetAllAssociationOwners",
+  "tag": "Association Owners"
+ },
+ {
+  "tool": "create_ownership_account_ledger_payment",
+  "method": "POST",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/payments",
+  "operationId": "ExternalApiOwnershipAccountLedgerPayments_CreateOwnershipAccountLedgerPayment",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "get_rental_preferred_vendors",
+  "method": "GET",
+  "path": "/v1/rentals/{propertyId}/vendors",
+  "operationId": "ExternalApiRentalPreferredVendors_GetRentalPreferredVendors",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "update_rental_preferred_vendors",
+  "method": "PUT",
+  "path": "/v1/rentals/{propertyId}/vendors",
+  "operationId": "ExternalApiRentalPreferredVendors_UpdateRentalPreferredVendors",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "create_application_ledger_payment",
+  "method": "POST",
+  "path": "/v1/applications/{applicationId}/payments",
+  "operationId": "ExternalApiApplicationLedgerPayments_CreateApplicationLedgerPayment",
+  "tag": "Application Transactions"
+ },
+ {
+  "tool": "create_ownership_account_auto_allocated_payment",
+  "method": "POST",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/autoallocatedpayments",
+  "operationId": "ExternalApiOwnershipAccountAutoAllocatedPayment_CreateOwnershipAccountAutoAllocatedPayment",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "create_payment",
+  "method": "POST",
+  "path": "/v1/leases/{leaseId}/payments",
+  "operationId": "ExternalApiLeaseLedgerPaymentsWrite_CreatePayment",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "create_application_auto_allocated_payment",
+  "method": "POST",
+  "path": "/v1/applications/{applicationId}/autoallocatedpayments",
+  "operationId": "ExternalApiApplicationLedgerAutoAllocatedPayments_CreateApplicationAutoAllocatedPayment",
+  "tag": "Application Transactions"
+ },
+ {
+  "tool": "get_all_asset_categories",
+  "method": "GET",
+  "path": "/v1/assetcategories",
+  "operationId": "ExternalApiAssetCategory_GetAllAssetCategories",
+  "tag": "Inventory and Assets"
+ },
+ {
+  "tool": "update_ownership_account_ledger_payment",
+  "method": "PUT",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/payments/{paymentId}",
+  "operationId": "ExternalApiOwnershipAccountLedgerPayments_UpdateOwnershipAccountLedgerPayment",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "get_association_tenants",
+  "method": "GET",
+  "path": "/v1/associations/tenants",
+  "operationId": "ExternalApiAssociationTenants_GetAssociationTenants",
+  "tag": "Association Tenants"
+ },
+ {
+  "tool": "create_lease_auto_allocated_payment",
+  "method": "POST",
+  "path": "/v1/leases/{leaseId}/autoallocatedpayments",
+  "operationId": "ExternalApiLeaseAutoAllocatedPayment_CreateLeaseAutoAllocatedPayment",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "get_lease_notes",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/notes",
+  "operationId": "ExternalApiLeaseNotes_GetLeaseNotes",
+  "tag": "Leases"
+ },
+ {
+  "tool": "create_lease_note",
+  "method": "POST",
+  "path": "/v1/leases/{leaseId}/notes",
+  "operationId": "ExternalApiLeaseNotes_CreateLeaseNote",
+  "tag": "Leases"
+ },
+ {
+  "tool": "update_application_ledger_payment",
+  "method": "PUT",
+  "path": "/v1/applications/{applicationId}/payments/{transactionId}",
+  "operationId": "ExternalApiApplicationLedgerPayments_UpdateApplicationLedgerPayment",
+  "tag": "Application Transactions"
+ },
+ {
+  "tool": "create_ownership_account_credit",
+  "method": "POST",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/credits",
+  "operationId": "ExternalApiOwnershipAccountLedgerCredits_CreateOwnershipAccountCredit",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "get_association_tenant_by_id",
+  "method": "GET",
+  "path": "/v1/associations/tenants/{tenantId}",
+  "operationId": "ExternalApiAssociationTenants_GetAssociationTenantById",
+  "tag": "Association Tenants"
+ },
+ {
+  "tool": "get_inventory_storages",
+  "method": "GET",
+  "path": "/v1/inventorystorages",
+  "operationId": "ExternalApiInventoryStorage_GetInventoryStorages",
+  "tag": "Inventory and Assets"
+ },
+ {
+  "tool": "get_lease_note_by_note_id",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/notes/{noteId}",
+  "operationId": "ExternalApiLeaseNotes_GetLeaseNoteByNoteId",
+  "tag": "Leases"
+ },
+ {
+  "tool": "update_lease_note",
+  "method": "PUT",
+  "path": "/v1/leases/{leaseId}/notes/{noteId}",
+  "operationId": "ExternalApiLeaseNotes_UpdateLeaseNote",
+  "tag": "Leases"
+ },
+ {
+  "tool": "update_lease_ledger_payment",
+  "method": "PUT",
+  "path": "/v1/leases/{leaseId}/payments/{paymentId}",
+  "operationId": "ExternalApiLeaseLedgerPaymentsWrite_UpdateLeaseLedgerPayment",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "create_lease_reverse_payment",
+  "method": "POST",
+  "path": "/v1/leases/{leaseId}/reversepayments",
+  "operationId": "ExternalApiLeaseLedgerPaymentReversalsWrite_CreateLeaseReversePayment",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "create_application_ledger_reverse_payment",
+  "method": "POST",
+  "path": "/v1/applications/{applicationId}/reversepayments",
+  "operationId": "ExternalApiApplicationLedgerPaymentReversals_CreateApplicationLedgerReversePayment",
+  "tag": "Application Transactions"
+ },
+ {
+  "tool": "get_ownership_account_refund_by_id",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/refunds/{refundId}",
+  "operationId": "ExternalApiOwnershipAccountRefund_GetOwnershipAccountRefundById",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "get_lease_ledger_refund_by_id",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/refunds/{refundId}",
+  "operationId": "ExternalApiLeaseLedgerRefunds_GetLeaseLedgerRefundById",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "get_application_ledger_refund_by_id",
+  "method": "GET",
+  "path": "/v1/applications/{applicationId}/refunds/{transactionId}",
+  "operationId": "ExternalApiApplicationLedgerRefunds_GetApplicationLedgerRefundById",
+  "tag": "Application Transactions"
+ },
+ {
+  "tool": "create_ownership_account_refund",
+  "method": "POST",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/refunds",
+  "operationId": "ExternalApiOwnershipAccountRefund_CreateOwnershipAccountRefund",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "create_lease_ledger_refund",
+  "method": "POST",
+  "path": "/v1/leases/{leaseId}/refunds",
+  "operationId": "ExternalApiLeaseLedgerRefunds_CreateLeaseLedgerRefund",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "create_application_ledger_refund",
+  "method": "POST",
+  "path": "/v1/applications/{applicationId}/refunds",
+  "operationId": "ExternalApiApplicationLedgerRefunds_CreateApplicationLedgerRefund",
+  "tag": "Application Transactions"
+ },
+ {
+  "tool": "create_ownership_account_deposit_withholding",
+  "method": "POST",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/applieddeposits",
+  "operationId": "ExternalApiOwnershipAccountDepositWithholding_CreateOwnershipAccountDepositWithholding",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "create_lease_credit",
+  "method": "POST",
+  "path": "/v1/leases/{leaseId}/credits",
+  "operationId": "ExternalApiLeaseLedgerCreditsWrite_CreateLeaseCredit",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "get_all_lease_renewals_for_all_properties",
+  "method": "GET",
+  "path": "/v1/leases/renewals",
+  "operationId": "ExternalApiLeaseRenewalsRead_GetAllLeaseRenewalsForAllProperties",
+  "tag": "Leases"
+ },
+ {
+  "tool": "update_ownership_account_deposit_withholding",
+  "method": "PUT",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/applieddeposits/{depositId}",
+  "operationId": "ExternalApiOwnershipAccountDepositWithholding_UpdateOwnershipAccountDepositWithholding",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "create_lease_ledger_deposit_withholding",
+  "method": "POST",
+  "path": "/v1/leases/{leaseId}/applieddeposits",
+  "operationId": "ExternalApiLeaseLedgerDepositWithholding_CreateLeaseLedgerDepositWithholding",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "get_all_lease_renewals",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/renewals",
+  "operationId": "ExternalApiLeaseRenewalsRead_GetAllLeaseRenewals",
+  "tag": "Leases"
+ },
+ {
+  "tool": "create_lease_renewal",
+  "method": "POST",
+  "path": "/v1/leases/{leaseId}/renewals",
+  "operationId": "ExternalApiLeaseRenewalsWrite_CreateLeaseRenewal",
+  "tag": "Leases"
+ },
+ {
+  "tool": "get_association_recurring_transaction",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/recurringtransactions",
+  "operationId": "ExternalApiOwnershipAccountRecurringTransactions_GetAssociationRecurringTransaction",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "update_deposit_withholding",
+  "method": "PUT",
+  "path": "/v1/leases/{leaseId}/applieddeposits/{depositId}",
+  "operationId": "ExternalApiLeaseLedgerDepositWithholding_UpdateDepositWithholding",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "get_lease_renewal_by_id",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/renewals/{renewalId}",
+  "operationId": "ExternalApiLeaseRenewalsRead_GetLeaseRenewalById",
+  "tag": "Leases"
+ },
+ {
+  "tool": "get_lease_recurring_transactions",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/recurringtransactions",
+  "operationId": "ExternalApiLeaseRecurringTransactions_GetLeaseRecurringTransactions",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "get_account_info",
+  "method": "GET",
+  "path": "/v1/administration/account",
+  "operationId": "ExternalApiAccountInfo_GetAccountInfo",
+  "tag": "Administration"
+ },
+ {
+  "tool": "get_accounting_lock_period_settings",
+  "method": "GET",
+  "path": "/v1/administration/accountinglockperiod",
+  "operationId": "ExternalApiAccountingLockPeriod_GetAccountingLockPeriodSettings",
+  "tag": "Administration"
+ },
+ {
+  "tool": "get_global_partial_payment_settings",
+  "method": "GET",
+  "path": "/v1/administration/residentsettings/partialpaymentsettings",
+  "operationId": "ExternalApiPartialPaymentGlobalSettings_GetGlobalPartialPaymentSettings",
+  "tag": "Administration"
+ },
+ {
+  "tool": "update_patch_global_partial_payment_settings",
+  "method": "PATCH",
+  "path": "/v1/administration/residentsettings/partialpaymentsettings",
+  "operationId": "ExternalApiPartialPaymentGlobalSettings_PatchGlobalPartialPaymentSettings",
+  "tag": "Administration"
+ },
+ {
+  "tool": "get_all_applicant_notes",
+  "method": "GET",
+  "path": "/v1/applicants/{applicantId}/notes",
+  "operationId": "ExternalApiApplicantNotes_GetAllApplicantNotes",
+  "tag": "Applicants"
+ },
+ {
+  "tool": "create_applicant_note",
+  "method": "POST",
+  "path": "/v1/applicants/{applicantId}/notes",
+  "operationId": "ExternalApiApplicantNotes_CreateApplicantNote",
+  "tag": "Applicants"
+ },
+ {
+  "tool": "get_applicant_note_by_id",
+  "method": "GET",
+  "path": "/v1/applicants/{applicantId}/notes/{noteId}",
+  "operationId": "ExternalApiApplicantNotes_GetApplicantNoteById",
+  "tag": "Applicants"
+ },
+ {
+  "tool": "get_applicant_group_by_id",
+  "method": "GET",
+  "path": "/v1/applicants/groups/{applicantGroupId}",
+  "operationId": "ExternalApiApplicantGroups_GetApplicantGroupById",
+  "tag": "Applicants"
+ },
+ {
+  "tool": "get_applicant_group_notes",
+  "method": "GET",
+  "path": "/v1/applicants/groups/{applicantGroupId}/notes",
+  "operationId": "ExternalApiApplicantGroupNotes_GetApplicantGroupNotes",
+  "tag": "Applicants"
+ },
+ {
+  "tool": "create_application_group_note",
+  "method": "POST",
+  "path": "/v1/applicants/groups/{applicantGroupId}/notes",
+  "operationId": "ExternalApiApplicantGroupNotes_CreateApplicationGroupNote",
+  "tag": "Applicants"
+ },
+ {
+  "tool": "get_applicant_group_note_by_note_id",
+  "method": "GET",
+  "path": "/v1/applicants/groups/{applicantGroupId}/notes/{noteId}",
+  "operationId": "ExternalApiApplicantGroupNotes_GetApplicantGroupNoteByNoteId",
+  "tag": "Applicants"
+ },
+ {
+  "tool": "update_application_group_note",
+  "method": "PUT",
+  "path": "/v1/applicants/groups/{applicantGroupId}/notes/{noteId}",
+  "operationId": "ExternalApiApplicantGroupNotes_UpdateApplicationGroupNote",
+  "tag": "Applicants"
+ },
+ {
+  "tool": "create_board_member",
+  "method": "POST",
+  "path": "/v1/associations/{associationId}/boardmembers",
+  "operationId": "ExternalApiAssociationBoardMembers_CreateBoardMember",
+  "tag": "Board Members"
+ },
+ {
+  "tool": "get_association_board_member_by_id",
+  "method": "GET",
+  "path": "/v1/associations/{associationId}/boardmembers/{boardMemberId}",
+  "operationId": "ExternalApiAssociationBoardMembers_GetAssociationBoardMemberById",
+  "tag": "Board Members"
+ },
+ {
+  "tool": "update_board_member",
+  "method": "PUT",
+  "path": "/v1/associations/{associationId}/boardmembers/{boardMemberId}",
+  "operationId": "ExternalApiAssociationBoardMembers_UpdateBoardMember",
+  "tag": "Board Members"
+ },
+ {
+  "tool": "delete_board_member",
+  "method": "DELETE",
+  "path": "/v1/associations/{associationId}/boardmembers/{boardMemberId}",
+  "operationId": "ExternalApiAssociationBoardMembers_DeleteBoardMember",
+  "tag": "Board Members"
+ },
+ {
+  "tool": "get_e_pay_settings_for_association_by_id",
+  "method": "GET",
+  "path": "/v1/associations/{associationId}/epaysettings",
+  "operationId": "ExternalApiAssociationsEPaySettings_GetEPaySettingsForAssociationById",
+  "tag": "Associations"
+ },
+ {
+  "tool": "update_e_pay_settings_for_association",
+  "method": "PUT",
+  "path": "/v1/associations/{associationId}/epaysettings",
+  "operationId": "ExternalApiAssociationsEPaySettings_UpdateEPaySettingsForAssociation",
+  "tag": "Associations"
+ },
+ {
+  "tool": "create_inactivate_association",
+  "method": "POST",
+  "path": "/v1/associations/{associationId}/inactivationrequest",
+  "operationId": "ExternalApiAssociationActiveStatus_InactivateAssociation",
+  "tag": "Associations"
+ },
+ {
+  "tool": "get_meter_readings_for_association",
+  "method": "GET",
+  "path": "/v1/associations/{associationId}/meterreadings",
+  "operationId": "ExternalApiAssociationMeterReadingsRead_GetMeterReadingsForAssociation",
+  "tag": "Association Meter Readings"
+ },
+ {
+  "tool": "get_association_meter_reading_details_async",
+  "method": "GET",
+  "path": "/v1/associations/{associationId}/meterreadings/summary",
+  "operationId": "ExternalApiAssociationMeterReadingDetails_GetAssociationMeterReadingDetailsAsync",
+  "tag": "Association Meter Readings"
+ },
+ {
+  "tool": "update_upsert_association_meter_reading_details_async",
+  "method": "PUT",
+  "path": "/v1/associations/{associationId}/meterreadings/summary",
+  "operationId": "ExternalApiAssociationMeterReadingDetailsUpsert_UpsertAssociationMeterReadingDetailsAsync",
+  "tag": "Association Meter Readings"
+ },
+ {
+  "tool": "delete_meter_reading_details_for_association",
+  "method": "DELETE",
+  "path": "/v1/associations/{associationId}/meterreadings/summary",
+  "operationId": "ExternalApiAssociationDeleteMeterReadingDetails_DeleteMeterReadingDetailsForAssociation",
+  "tag": "Association Meter Readings"
+ },
+ {
+  "tool": "get_association_notes",
+  "method": "GET",
+  "path": "/v1/associations/{associationId}/notes",
+  "operationId": "ExternalApiAssociationNotes_GetAssociationNotes",
+  "tag": "Associations"
+ },
+ {
+  "tool": "create_association_note",
+  "method": "POST",
+  "path": "/v1/associations/{associationId}/notes",
+  "operationId": "ExternalApiAssociationNotes_CreateAssociationNote",
+  "tag": "Associations"
+ },
+ {
+  "tool": "get_association_note_by_note_id",
+  "method": "GET",
+  "path": "/v1/associations/{associationId}/notes/{noteId}",
+  "operationId": "ExternalApiAssociationNotes_GetAssociationNoteByNoteId",
+  "tag": "Associations"
+ },
+ {
+  "tool": "update_association_note",
+  "method": "PUT",
+  "path": "/v1/associations/{associationId}/notes/{noteId}",
+  "operationId": "ExternalApiAssociationNotes_UpdateAssociationNote",
+  "tag": "Associations"
+ },
+ {
+  "tool": "create_reactivate_association",
+  "method": "POST",
+  "path": "/v1/associations/{associationId}/reactivationrequest",
+  "operationId": "ExternalApiAssociationActiveStatus_ReactivateAssociation",
+  "tag": "Associations"
+ },
+ {
+  "tool": "get_association_preferred_vendors",
+  "method": "GET",
+  "path": "/v1/associations/{associationId}/vendors",
+  "operationId": "ExternalApiAssociationPreferredVendors_GetAssociationPreferredVendors",
+  "tag": "Associations"
+ },
+ {
+  "tool": "update_association_preferred_vendors",
+  "method": "PUT",
+  "path": "/v1/associations/{associationId}/vendors",
+  "operationId": "ExternalApiAssociationPreferredVendors_UpdateAssociationPreferredVendors",
+  "tag": "Associations"
+ },
+ {
+  "tool": "get_association_appliances",
+  "method": "GET",
+  "path": "/v1/associations/appliances",
+  "operationId": "ExternalApiAssociationAppliances_GetAssociationAppliances",
+  "tag": "Appliances"
+ },
+ {
+  "tool": "create_association_appliance",
+  "method": "POST",
+  "path": "/v1/associations/appliances",
+  "operationId": "ExternalApiAssociationAppliances_CreateAssociationAppliance",
+  "tag": "Appliances"
+ },
+ {
+  "tool": "get_association_appliance_by_id",
+  "method": "GET",
+  "path": "/v1/associations/appliances/{applianceId}",
+  "operationId": "ExternalApiAssociationAppliances_GetAssociationApplianceById",
+  "tag": "Appliances"
+ },
+ {
+  "tool": "update_association_appliance",
+  "method": "PUT",
+  "path": "/v1/associations/appliances/{applianceId}",
+  "operationId": "ExternalApiAssociationAppliances_UpdateAssociationAppliance",
+  "tag": "Appliances"
+ },
+ {
+  "tool": "delete_association_appliances",
+  "method": "DELETE",
+  "path": "/v1/associations/appliances/{applianceId}",
+  "operationId": "ExternalApiAssociationAppliances_DeleteAssociationAppliances",
+  "tag": "Appliances"
+ },
+ {
+  "tool": "get_all_association_appliance_service_history",
+  "method": "GET",
+  "path": "/v1/associations/appliances/{applianceId}/servicehistory",
+  "operationId": "ExternalApiAssociationApplianceServiceHistory_GetAllAssociationApplianceServiceHistory",
+  "tag": "Appliances"
+ },
+ {
+  "tool": "create_association_appliance_service_history",
+  "method": "POST",
+  "path": "/v1/associations/appliances/{applianceId}/servicehistory",
+  "operationId": "ExternalApiAssociationApplianceServiceHistory_CreateAssociationApplianceServiceHistory",
+  "tag": "Appliances"
+ },
+ {
+  "tool": "get_association_appliance_service_history_by_id",
+  "method": "GET",
+  "path": "/v1/associations/appliances/{applianceId}/servicehistory/{serviceHistoryId}",
+  "operationId": "ExternalApiAssociationApplianceServiceHistory_GetAssociationApplianceServiceHistoryById",
+  "tag": "Appliances"
+ },
+ {
+  "tool": "get_bank_lock_box_data",
+  "method": "GET",
+  "path": "/v1/associations/banklockboxdata",
+  "operationId": "ExternalApiAssociationBankLockBoxData_GetBankLockBoxData",
+  "tag": "Associations"
+ },
+ {
+  "tool": "get_association_owner_notes",
+  "method": "GET",
+  "path": "/v1/associations/owners/{ownerId}/notes",
+  "operationId": "ExternalApiAssociationOwnerNotes_GetAssociationOwnerNotes",
+  "tag": "Association Owners"
+ },
+ {
+  "tool": "create_association_owner_note",
+  "method": "POST",
+  "path": "/v1/associations/owners/{ownerId}/notes",
+  "operationId": "ExternalApiAssociationOwnerNotes_CreateAssociationOwnerNote",
+  "tag": "Association Owners"
+ },
+ {
+  "tool": "get_association_owner_note_by_note_id",
+  "method": "GET",
+  "path": "/v1/associations/owners/{ownerId}/notes/{noteId}",
+  "operationId": "ExternalApiAssociationOwnerNotes_GetAssociationOwnerNoteByNoteId",
+  "tag": "Association Owners"
+ },
+ {
+  "tool": "update_association_owner_note",
+  "method": "PUT",
+  "path": "/v1/associations/owners/{ownerId}/notes/{noteId}",
+  "operationId": "ExternalApiAssociationOwnerNotes_UpdateAssociationOwnerNote",
+  "tag": "Association Owners"
+ },
+ {
+  "tool": "get_unit_occupancy_statuses_for_association_owner",
+  "method": "GET",
+  "path": "/v1/associations/owners/{ownerId}/units",
+  "operationId": "ExternalApiAssociationOwnerUnits_GetUnitOccupancyStatusesForAssociationOwner",
+  "tag": "Association Owners"
+ },
+ {
+  "tool": "get_unit_occupancy_statuses_by_id_for_association_owner",
+  "method": "GET",
+  "path": "/v1/associations/owners/{ownerId}/units/{unitId}",
+  "operationId": "ExternalApiAssociationOwnerUnits_GetUnitOccupancyStatusesByIdForAssociationOwner",
+  "tag": "Association Owners"
+ },
+ {
+  "tool": "update_association_owner_occupancy_status",
+  "method": "PUT",
+  "path": "/v1/associations/owners/{ownerId}/units/{unitId}",
+  "operationId": "ExternalApiAssociationOwnerUnits_UpdateAssociationOwnerOccupancyStatus",
+  "tag": "Association Owners"
+ },
+ {
+  "tool": "get_association_ownership_account_notes",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/notes",
+  "operationId": "ExternalApiOwnershipAccountNotes_GetAssociationOwnershipAccountNotes",
+  "tag": "Ownership Accounts"
+ },
+ {
+  "tool": "create_association_ownership_account_note",
+  "method": "POST",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/notes",
+  "operationId": "ExternalApiOwnershipAccountNotes_CreateAssociationOwnershipAccountNote",
+  "tag": "Ownership Accounts"
+ },
+ {
+  "tool": "get_association_ownership_account_note_by_note_id",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/notes/{noteId}",
+  "operationId": "ExternalApiOwnershipAccountNotes_GetAssociationOwnershipAccountNoteByNoteId",
+  "tag": "Ownership Accounts"
+ },
+ {
+  "tool": "update_association_ownership_account_note",
+  "method": "PUT",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/notes/{noteId}",
+  "operationId": "ExternalApiOwnershipAccountNotes_UpdateAssociationOwnershipAccountNote",
+  "tag": "Ownership Accounts"
+ },
+ {
+  "tool": "get_ownership_account_partial_payment_settings",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/partialpaymentsettings",
+  "operationId": "ExternalApiOwnershipAccountsPartialPaymentSettings_GetOwnershipAccountPartialPaymentSettings",
+  "tag": "Ownership Accounts"
+ },
+ {
+  "tool": "update_patch_ownership_account_partial_payment",
+  "method": "PATCH",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/partialpaymentsettings",
+  "operationId": "ExternalApiOwnershipAccountUpdatePartialPaymentSettings_PatchOwnershipAccountPartialPayment",
+  "tag": "Ownership Accounts"
+ },
+ {
+  "tool": "create_ownership_accounts_charge_recurring_transaction",
+  "method": "POST",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/recurringcharges",
+  "operationId": "ExternalApiOwnershipAccountChargeRecurringTransactions_CreateOwnershipAccountsChargeRecurringTransaction",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "get_ownership_accounts_charge_recurring_transaction_by_id",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/recurringcharges/{transactionId}",
+  "operationId": "ExternalApiOwnershipAccountChargeRecurringTransactions_GetOwnershipAccountsChargeRecurringTransactionById",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "create_ownership_account_credit_recurring_transaction",
+  "method": "POST",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/recurringcredits",
+  "operationId": "ExternalApiOwnershipAccountRecurringCredits_CreateOwnershipAccountCreditRecurringTransaction",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "get_ownership_account_recurring_credit_by_id",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/recurringcredits/{transactionId}",
+  "operationId": "ExternalApiOwnershipAccountRecurringCredits_GetOwnershipAccountRecurringCreditById",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "create_ownership_account_recurring_payment",
+  "method": "POST",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/recurringpayments",
+  "operationId": "ExternalApiOwnershipAccountRecurringPayments_CreateOwnershipAccountRecurringPayment",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "get_recurring_ownership_account_payments_by_id",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/{ownershipAccountId}/recurringpayments/{paymentId}",
+  "operationId": "ExternalApiOwnershipAccountRecurringPayments_GetRecurringOwnershipAccountPaymentsById",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "get_architectural_request_file_async",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/architecturalrequests/{architecturalRequestId}/files/{fileId}",
+  "operationId": "ExternalApiAssociationArchitecturalRequests_GetArchitecturalRequestFileAsync",
+  "tag": "Architectural Requests"
+ },
+ {
+  "tool": "create_download_architectural_request_file_async",
+  "method": "POST",
+  "path": "/v1/associations/ownershipaccounts/architecturalrequests/{architecturalRequestId}/files/{fileId}/downloadrequests",
+  "operationId": "ExternalApiAssociationArchitecturalRequests_DownloadArchitecturalRequestFileAsync",
+  "tag": "Architectural Requests"
+ },
+ {
+  "tool": "create_pre_authenticated_file_upload_request",
+  "method": "POST",
+  "path": "/v1/associations/ownershipaccounts/architecturalrequests/{architecturalRequestId}/files/uploads",
+  "operationId": "ExternalApiAssociationArchitecturalRequests_CreatePreAuthenticatedFileUploadRequest",
+  "tag": "Architectural Requests"
+ },
+ {
+  "tool": "get_recurring_transactions_for_all_ownership_accounts",
+  "method": "GET",
+  "path": "/v1/associations/ownershipaccounts/recurringtransactions",
+  "operationId": "ExternalApiOwnershipAccountRecurringTransactions_GetRecurringTransactionsForAllOwnershipAccounts",
+  "tag": "Ownership Account Transactions"
+ },
+ {
+  "tool": "get_association_tenant_notes",
+  "method": "GET",
+  "path": "/v1/associations/tenants/{tenantId}/notes",
+  "operationId": "ExternalApiAssociationTenantNotes_GetAssociationTenantNotes",
+  "tag": "Association Tenants"
+ },
+ {
+  "tool": "create_association_tenant_note",
+  "method": "POST",
+  "path": "/v1/associations/tenants/{tenantId}/notes",
+  "operationId": "ExternalApiAssociationTenantNotes_CreateAssociationTenantNote",
+  "tag": "Association Tenants"
+ },
+ {
+  "tool": "get_association_tenant_note_by_id",
+  "method": "GET",
+  "path": "/v1/associations/tenants/{tenantId}/notes/{noteId}",
+  "operationId": "ExternalApiAssociationTenantNotes_GetAssociationTenantNoteById",
+  "tag": "Association Tenants"
+ },
+ {
+  "tool": "update_association_tenant_note",
+  "method": "PUT",
+  "path": "/v1/associations/tenants/{tenantId}/notes/{noteId}",
+  "operationId": "ExternalApiAssociationTenantNotes_UpdateAssociationTenantNote",
+  "tag": "Association Tenants"
+ },
+ {
+  "tool": "get_association_unit_notes",
+  "method": "GET",
+  "path": "/v1/associations/units/{unitId}/notes",
+  "operationId": "ExternalApiAssociationUnitNotes_GetAssociationUnitNotes",
+  "tag": "Association Units"
+ },
+ {
+  "tool": "create_association_unit_note",
+  "method": "POST",
+  "path": "/v1/associations/units/{unitId}/notes",
+  "operationId": "ExternalApiAssociationUnitNotes_CreateAssociationUnitNote",
+  "tag": "Association Units"
+ },
+ {
+  "tool": "get_association_unit_note_by_note_id",
+  "method": "GET",
+  "path": "/v1/associations/units/{unitId}/notes/{noteId}",
+  "operationId": "ExternalApiAssociationUnitNotes_GetAssociationUnitNoteByNoteId",
+  "tag": "Association Units"
+ },
+ {
+  "tool": "update_association_unit_note",
+  "method": "PUT",
+  "path": "/v1/associations/units/{unitId}/notes/{noteId}",
+  "operationId": "ExternalApiAssociationUnitNotes_UpdateAssociationUnitNote",
+  "tag": "Association Units"
+ },
+ {
+  "tool": "get_bank_account_checks",
+  "method": "GET",
+  "path": "/v1/bankaccounts/{bankAccountId}/checks",
+  "operationId": "ExternalApiBankAccountChecks_GetBankAccountChecks",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "create_bank_account_check",
+  "method": "POST",
+  "path": "/v1/bankaccounts/{bankAccountId}/checks",
+  "operationId": "ExternalApiBankAccountChecks_CreateBankAccountCheck",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "get_check_for_bank_account",
+  "method": "GET",
+  "path": "/v1/bankaccounts/{bankAccountId}/checks/{checkId}",
+  "operationId": "ExternalApiBankAccountChecks_GetCheckForBankAccount",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "update_check_for_bank_account",
+  "method": "PUT",
+  "path": "/v1/bankaccounts/{bankAccountId}/checks/{checkId}",
+  "operationId": "ExternalApiBankAccountChecks_UpdateCheckForBankAccount",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "get_files_for_bank_account_check",
+  "method": "GET",
+  "path": "/v1/bankaccounts/{bankAccountId}/checks/{checkId}/files",
+  "operationId": "ExternalApiBankAccountCheckFiles_GetFilesForBankAccountCheck",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "get_bank_account_check_file_by_id",
+  "method": "GET",
+  "path": "/v1/bankaccounts/{bankAccountId}/checks/{checkId}/files/{fileId}",
+  "operationId": "ExternalApiBankAccountCheckFiles_GetBankAccountCheckFileById",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "delete_bank_account_check_file",
+  "method": "DELETE",
+  "path": "/v1/bankaccounts/{bankAccountId}/checks/{checkId}/files/{fileId}",
+  "operationId": "ExternalApiBankAccountCheckFiles_DeleteBankAccountCheckFile",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "create_download_check_file",
+  "method": "POST",
+  "path": "/v1/bankaccounts/{bankAccountId}/checks/{checkId}/files/{fileId}/downloadrequests",
+  "operationId": "ExternalApiBankAccountCheckFileDownloadRequests_DownloadCheckFile",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "create_upload_request_v2",
+  "method": "POST",
+  "path": "/v1/bankaccounts/{bankAccountId}/checks/{checkId}/files/uploads",
+  "operationId": "ExternalApiBankAccountCheckFileUploads_CreateUploadRequestV2",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "get_bank_account_deposits",
+  "method": "GET",
+  "path": "/v1/bankaccounts/{bankAccountId}/deposits",
+  "operationId": "ExternalApiBankAccountDeposits_GetBankAccountDeposits",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "create_bank_account_deposit",
+  "method": "POST",
+  "path": "/v1/bankaccounts/{bankAccountId}/deposits",
+  "operationId": "ExternalApiBankAccountDeposits_CreateBankAccountDeposit",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "get_bank_account_deposit_by_id",
+  "method": "GET",
+  "path": "/v1/bankaccounts/{bankAccountId}/deposits/{depositId}",
+  "operationId": "ExternalApiBankAccountDeposits_GetBankAccountDepositById",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "update_bank_account_deposit",
+  "method": "PUT",
+  "path": "/v1/bankaccounts/{bankAccountId}/deposits/{depositId}",
+  "operationId": "ExternalApiBankAccountDeposits_UpdateBankAccountDeposit",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "get_all_quick_deposits",
+  "method": "GET",
+  "path": "/v1/bankaccounts/{bankAccountId}/quickdeposits",
+  "operationId": "ExternalApiBankAccountQuickDeposits_GetAllQuickDeposits",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "create_quick_deposit",
+  "method": "POST",
+  "path": "/v1/bankaccounts/{bankAccountId}/quickdeposits",
+  "operationId": "ExternalApiBankAccountQuickDeposits_CreateQuickDeposit",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "get_quick_deposit_by_id",
+  "method": "GET",
+  "path": "/v1/bankaccounts/{bankAccountId}/quickdeposits/{quickDepositId}",
+  "operationId": "ExternalApiBankAccountQuickDeposits_GetQuickDepositById",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "update_quick_deposit",
+  "method": "PUT",
+  "path": "/v1/bankaccounts/{bankAccountId}/quickdeposits/{quickDepositId}",
+  "operationId": "ExternalApiBankAccountQuickDeposits_UpdateQuickDeposit",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "get_reconciliations",
+  "method": "GET",
+  "path": "/v1/bankaccounts/{bankAccountId}/reconciliations",
+  "operationId": "ExternalApiBankAccountReconciliationsRead_GetReconciliations",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "create_pending_reconciliations",
+  "method": "POST",
+  "path": "/v1/bankaccounts/{bankAccountId}/reconciliations",
+  "operationId": "ExternalApiBankAccountPendingReconciliations_CreatePendingReconciliations",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "get_reconciliation_by_id",
+  "method": "GET",
+  "path": "/v1/bankaccounts/{bankAccountId}/reconciliations/{reconciliationId}",
+  "operationId": "ExternalApiBankAccountReconciliationsRead_GetReconciliationById",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "update_reconciliation",
+  "method": "PUT",
+  "path": "/v1/bankaccounts/{bankAccountId}/reconciliations/{reconciliationId}",
+  "operationId": "ExternalApiBankAccountReconciliationsWrite_UpdateReconciliation",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "get_reconciliation_balance_by_id",
+  "method": "GET",
+  "path": "/v1/bankaccounts/{bankAccountId}/reconciliations/{reconciliationId}/balances",
+  "operationId": "ExternalApiBankAccountReconciliationsRead_GetReconciliationBalanceById",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "update_reconciliation_balances",
+  "method": "PUT",
+  "path": "/v1/bankaccounts/{bankAccountId}/reconciliations/{reconciliationId}/balances",
+  "operationId": "ExternalApiBankAccountReconciliationsWrite_UpdateReconciliationBalances",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "create_clear_transactions",
+  "method": "POST",
+  "path": "/v1/bankaccounts/{bankAccountId}/reconciliations/{reconciliationId}/cleartransactionsrequest",
+  "operationId": "ExternalApiBankAccountReconciliationsWrite_ClearTransactions",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "create_finalize_reconciliation",
+  "method": "POST",
+  "path": "/v1/bankaccounts/{bankAccountId}/reconciliations/{reconciliationId}/finalizerequest",
+  "operationId": "ExternalApiBankAccountReconciliationFinalize_FinalizeReconciliation",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "get_bank_account_reconciliation_transactions",
+  "method": "GET",
+  "path": "/v1/bankaccounts/{bankAccountId}/reconciliations/{reconciliationId}/transactions",
+  "operationId": "ExternalApiBankAccountReconciliationsRead_GetBankAccountReconciliationTransactions",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "create_unclear_transactions",
+  "method": "POST",
+  "path": "/v1/bankaccounts/{bankAccountId}/reconciliations/{reconciliationId}/uncleartransactionsrequest",
+  "operationId": "ExternalApiBankAccountReconciliationsWrite_UnclearTransactions",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "get_bank_account_transactions",
+  "method": "GET",
+  "path": "/v1/bankaccounts/{bankAccountId}/transactions",
+  "operationId": "ExternalApiBankAccountTransactions_GetBankAccountTransactions",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "get_bank_account_transfers",
+  "method": "GET",
+  "path": "/v1/bankaccounts/{bankAccountId}/transfers",
+  "operationId": "ExternalApiBankAccountTransfers_GetBankAccountTransfers",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "create_bank_account_transfer",
+  "method": "POST",
+  "path": "/v1/bankaccounts/{bankAccountId}/transfers",
+  "operationId": "ExternalApiBankAccountTransfers_CreateBankAccountTransfer",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "get_bank_account_transfer_by_id",
+  "method": "GET",
+  "path": "/v1/bankaccounts/{bankAccountId}/transfers/{transferId}",
+  "operationId": "ExternalApiBankAccountTransfers_GetBankAccountTransferById",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "update_bank_account_transfer",
+  "method": "PUT",
+  "path": "/v1/bankaccounts/{bankAccountId}/transfers/{transferId}",
+  "operationId": "ExternalApiBankAccountTransfers_UpdateBankAccountTransfer",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "get_undeposited_funds",
+  "method": "GET",
+  "path": "/v1/bankaccounts/{bankAccountId}/undepositedfunds",
+  "operationId": "ExternalApiBankAccountUndepositedFunds_GetUndepositedFunds",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "get_bank_account_withdrawals",
+  "method": "GET",
+  "path": "/v1/bankaccounts/{bankAccountId}/withdrawals",
+  "operationId": "ExternalApiBankAccountWithdrawals_GetBankAccountWithdrawals",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "create_withdrawal_for_bank_account",
+  "method": "POST",
+  "path": "/v1/bankaccounts/{bankAccountId}/withdrawals",
+  "operationId": "ExternalApiBankAccountWithdrawals_CreateWithdrawalForBankAccount",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "get_bank_account_withdrawal_by_id",
+  "method": "GET",
+  "path": "/v1/bankaccounts/{bankAccountId}/withdrawals/{withdrawalId}",
+  "operationId": "ExternalApiBankAccountWithdrawals_GetBankAccountWithdrawalById",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "update_bank_account_withdrawal",
+  "method": "PUT",
+  "path": "/v1/bankaccounts/{bankAccountId}/withdrawals/{withdrawalId}",
+  "operationId": "ExternalApiBankAccountWithdrawals_UpdateBankAccountWithdrawal",
+  "tag": "Bank Accounts"
+ },
+ {
+  "tool": "update_patch_bill",
+  "method": "PATCH",
+  "path": "/v1/bills/{billId}",
+  "operationId": "ExternalApiBills_PatchBill",
+  "tag": "Bills"
+ },
+ {
+  "tool": "get_all_files_for_bill",
+  "method": "GET",
+  "path": "/v1/bills/{billId}/files",
+  "operationId": "ExternalApiBillsFiles_GetAllFilesForBill",
+  "tag": "Bills"
+ },
+ {
+  "tool": "get_bill_file_by_id",
+  "method": "GET",
+  "path": "/v1/bills/{billId}/files/{fileId}",
+  "operationId": "ExternalApiBillsFiles_GetBillFileById",
+  "tag": "Bills"
+ },
+ {
+  "tool": "delete_bill_file",
+  "method": "DELETE",
+  "path": "/v1/bills/{billId}/files/{fileId}",
+  "operationId": "ExternalApiBillsFiles_DeleteBillFile",
+  "tag": "Bills"
+ },
+ {
+  "tool": "create_download_bill_file",
+  "method": "POST",
+  "path": "/v1/bills/{billId}/files/{fileId}/downloadrequest",
+  "operationId": "ExternalApiBillFileDownloadRequests_DownloadBillFile",
+  "tag": "Bills"
+ },
+ {
+  "tool": "create_upload_request",
+  "method": "POST",
+  "path": "/v1/bills/{billId}/files/uploads",
+  "operationId": "ExternalApiBillFileUploads_CreateUploadRequest",
+  "tag": "Bills"
+ },
+ {
+  "tool": "create_multiple_bill_payments",
+  "method": "POST",
+  "path": "/v1/bills/payments",
+  "operationId": "ExternalApiBillPaymentsWrite_CreateMultipleBillPayments",
+  "tag": "Bills"
+ },
+ {
+  "tool": "get_budgets",
+  "method": "GET",
+  "path": "/v1/budgets",
+  "operationId": "ExternalApiBudgets_GetBudgets",
+  "tag": "Budgets"
+ },
+ {
+  "tool": "create_budget_async",
+  "method": "POST",
+  "path": "/v1/budgets",
+  "operationId": "ExternalApiBudgets_CreateBudgetAsync",
+  "tag": "Budgets"
+ },
+ {
+  "tool": "get_budget_by_id",
+  "method": "GET",
+  "path": "/v1/budgets/{budgetId}",
+  "operationId": "ExternalApiBudgets_GetBudgetById",
+  "tag": "Budgets"
+ },
+ {
+  "tool": "update_budget",
+  "method": "PUT",
+  "path": "/v1/budgets/{budgetId}",
+  "operationId": "ExternalApiBudgets_UpdateBudget",
+  "tag": "Budgets"
+ },
+ {
+  "tool": "get_client_leads",
+  "method": "GET",
+  "path": "/v1/clientleads",
+  "operationId": "ExternalApiClientLeads_GetClientLeads",
+  "tag": "Client Leads"
+ },
+ {
+  "tool": "get_prospective_client",
+  "method": "GET",
+  "path": "/v1/clientleads/{clientLeadId}",
+  "operationId": "ExternalApiClientLeads_GetProspectiveClient",
+  "tag": "Client Leads"
+ },
+ {
+  "tool": "get_all_announcements",
+  "method": "GET",
+  "path": "/v1/communications/announcements",
+  "operationId": "ExternalApiAnnouncements_GetAllAnnouncements",
+  "tag": "Communications"
+ },
+ {
+  "tool": "create_announcement",
+  "method": "POST",
+  "path": "/v1/communications/announcements",
+  "operationId": "ExternalApiAnnouncements_CreateAnnouncement",
+  "tag": "Communications"
+ },
+ {
+  "tool": "get_announcement_by_id",
+  "method": "GET",
+  "path": "/v1/communications/announcements/{announcementId}",
+  "operationId": "ExternalApiAnnouncements_GetAnnouncementById",
+  "tag": "Communications"
+ },
+ {
+  "tool": "create_expire_announcement",
+  "method": "POST",
+  "path": "/v1/communications/announcements/{announcementId}/expirationrequest",
+  "operationId": "ExternalApiAnnouncementsExpiration_ExpireAnnouncement",
+  "tag": "Communications"
+ },
+ {
+  "tool": "get_announcement_properties",
+  "method": "GET",
+  "path": "/v1/communications/announcements/{announcementId}/properties",
+  "operationId": "ExternalApiAnnouncementProperties_GetAnnouncementProperties",
+  "tag": "Communications"
+ },
+ {
+  "tool": "get_emails",
+  "method": "GET",
+  "path": "/v1/communications/emails",
+  "operationId": "ExternalApiEmails_GetEmails",
+  "tag": "Communications"
+ },
+ {
+  "tool": "create_email",
+  "method": "POST",
+  "path": "/v1/communications/emails",
+  "operationId": "ExternalApiEmailsWrite_CreateEmail",
+  "tag": "Communications"
+ },
+ {
+  "tool": "get_email_by_id",
+  "method": "GET",
+  "path": "/v1/communications/emails/{emailId}",
+  "operationId": "ExternalApiEmails_GetEmailById",
+  "tag": "Communications"
+ },
+ {
+  "tool": "get_email_recipients",
+  "method": "GET",
+  "path": "/v1/communications/emails/{emailId}/recipients",
+  "operationId": "ExternalApiEmailRecipients_GetEmailRecipients",
+  "tag": "Communications"
+ },
+ {
+  "tool": "get_phone_logs",
+  "method": "GET",
+  "path": "/v1/communications/phonelogs",
+  "operationId": "ExternalApiPhoneLogs_GetPhoneLogs",
+  "tag": "Communications"
+ },
+ {
+  "tool": "create_phone_log",
+  "method": "POST",
+  "path": "/v1/communications/phonelogs",
+  "operationId": "ExternalApiPhoneLogs_CreatePhoneLog",
+  "tag": "Communications"
+ },
+ {
+  "tool": "get_phone_log_by_id",
+  "method": "GET",
+  "path": "/v1/communications/phonelogs/{phoneLogId}",
+  "operationId": "ExternalApiPhoneLogs_GetPhoneLogById",
+  "tag": "Communications"
+ },
+ {
+  "tool": "update_phone_log",
+  "method": "PUT",
+  "path": "/v1/communications/phonelogs/{phoneLogId}",
+  "operationId": "ExternalApiPhoneLogs_UpdatePhoneLog",
+  "tag": "Communications"
+ },
+ {
+  "tool": "get_mailing_templates",
+  "method": "GET",
+  "path": "/v1/communications/templates",
+  "operationId": "ExternalApiMailingTemplates_GetMailingTemplates",
+  "tag": "Communications"
+ },
+ {
+  "tool": "get_mailing_templates_by_id",
+  "method": "GET",
+  "path": "/v1/communications/templates/{templateId}",
+  "operationId": "ExternalApiMailingTemplates_GetMailingTemplatesById",
+  "tag": "Communications"
+ },
+ {
+  "tool": "get_credit_card_accounts",
+  "method": "GET",
+  "path": "/v1/creditcardaccounts",
+  "operationId": "ExternalApiCreditCardAccounts_GetCreditCardAccounts",
+  "tag": "Credit Card Accounts"
+ },
+ {
+  "tool": "create_credit_card_account",
+  "method": "POST",
+  "path": "/v1/creditcardaccounts",
+  "operationId": "ExternalApiCreditCardAccounts_CreateCreditCardAccount",
+  "tag": "Credit Card Accounts"
+ },
+ {
+  "tool": "get_credit_card_account",
+  "method": "GET",
+  "path": "/v1/creditcardaccounts/{creditCardAccountId}",
+  "operationId": "ExternalApiCreditCardAccounts_GetCreditCardAccount",
+  "tag": "Credit Card Accounts"
+ },
+ {
+  "tool": "update_credit_card_account",
+  "method": "PUT",
+  "path": "/v1/creditcardaccounts/{creditCardAccountId}",
+  "operationId": "ExternalApiCreditCardAccounts_UpdateCreditCardAccount",
+  "tag": "Credit Card Accounts"
+ },
+ {
+  "tool": "create_credit_card_account_balance_payment",
+  "method": "POST",
+  "path": "/v1/creditcardaccounts/{creditCardAccountId}/payments",
+  "operationId": "ExternalApiCreditCardAccountBalancePayments_CreateCreditCardAccountBalancePayment",
+  "tag": "Credit Card Accounts"
+ },
+ {
+  "tool": "get_credit_card_account_balance_payment_by_id",
+  "method": "GET",
+  "path": "/v1/creditcardaccounts/{creditCardAccountId}/payments/{journalId}",
+  "operationId": "ExternalApiCreditCardAccountBalancePayments_GetCreditCardAccountBalancePaymentById",
+  "tag": "Credit Card Accounts"
+ },
+ {
+  "tool": "update_edit_credit_card_account_balance_payment",
+  "method": "PUT",
+  "path": "/v1/creditcardaccounts/{creditCardAccountId}/payments/{journalId}",
+  "operationId": "ExternalApiCreditCardAccountBalancePayments_EditCreditCardAccountBalancePayment",
+  "tag": "Credit Card Accounts"
+ },
+ {
+  "tool": "create_credit_card_account_account_purchase",
+  "method": "POST",
+  "path": "/v1/creditcardaccounts/{creditCardAccountId}/purchases",
+  "operationId": "ExternalApiCreditCardAccountPurchases_CreateCreditCardAccountAccountPurchase",
+  "tag": "Credit Card Accounts"
+ },
+ {
+  "tool": "get_credit_card_account_purchase_by_id",
+  "method": "GET",
+  "path": "/v1/creditcardaccounts/{creditCardAccountId}/purchases/{journalId}",
+  "operationId": "ExternalApiCreditCardAccountPurchases_GetCreditCardAccountPurchaseById",
+  "tag": "Credit Card Accounts"
+ },
+ {
+  "tool": "update_edit_credit_card_account_purchase",
+  "method": "PUT",
+  "path": "/v1/creditcardaccounts/{creditCardAccountId}/purchases/{journalId}",
+  "operationId": "ExternalApiCreditCardAccountPurchases_EditCreditCardAccountPurchase",
+  "tag": "Credit Card Accounts"
+ },
+ {
+  "tool": "get_credit_card_account_transactions",
+  "method": "GET",
+  "path": "/v1/creditcardaccounts/{creditCardAccountId}/transactions",
+  "operationId": "ExternalApiCreditCardAccountTransactions_GetCreditCardAccountTransactions",
+  "tag": "Credit Card Accounts"
+ },
+ {
+  "tool": "get_credit_card_account_transaction_by_id",
+  "method": "GET",
+  "path": "/v1/creditcardaccounts/{creditCardAccountId}/transactions/{transactionId}",
+  "operationId": "ExternalApiCreditCardAccountTransactions_GetCreditCardAccountTransactionById",
+  "tag": "Credit Card Accounts"
+ },
+ {
+  "tool": "get_definition_by_id",
+  "method": "GET",
+  "path": "/v1/customfields/definitions/{definitionId}",
+  "operationId": "ExternalApiCustomFieldsDefinitions_GetDefinitionById",
+  "tag": "Custom Fields"
+ },
+ {
+  "tool": "update_patch_custom_field_definition",
+  "method": "PATCH",
+  "path": "/v1/customfields/definitions/{definitionId}",
+  "operationId": "ExternalApiCustomFieldsDefinitions_PatchCustomFieldDefinition",
+  "tag": "Custom Fields"
+ },
+ {
+  "tool": "delete_custom_field_definition",
+  "method": "DELETE",
+  "path": "/v1/customfields/definitions/{definitionId}",
+  "operationId": "ExternalApiCustomFieldsDefinitions_DeleteCustomFieldDefinition",
+  "tag": "Custom Fields"
+ },
+ {
+  "tool": "get_definitions_by_entity_type",
+  "method": "GET",
+  "path": "/v1/customfields/entityType/{entityType}/definitions",
+  "operationId": "ExternalApiCustomFieldsDefinitions_GetDefinitionsByEntityType",
+  "tag": "Custom Fields"
+ },
+ {
+  "tool": "create_definition",
+  "method": "POST",
+  "path": "/v1/customfields/entityType/{entityType}/definitions",
+  "operationId": "ExternalApiCustomFieldsDefinitions_CreateDefinition",
+  "tag": "Custom Fields"
+ },
+ {
+  "tool": "get_values",
+  "method": "GET",
+  "path": "/v1/customfields/entityType/{entityType}/entityId/{entityId}/values",
+  "operationId": "ExternalApiCustomFieldsValues_GetValues",
+  "tag": "Custom Fields"
+ },
+ {
+  "tool": "create_upsert_values",
+  "method": "POST",
+  "path": "/v1/customfields/entityType/{entityType}/entityId/{entityId}/values",
+  "operationId": "ExternalApiCustomFieldsValues_UpsertValues",
+  "tag": "Custom Fields"
+ },
+ {
+  "tool": "get_groups",
+  "method": "GET",
+  "path": "/v1/customfields/entityType/{entityType}/groups",
+  "operationId": "ExternalApiCustomFieldsGroups_GetGroups",
+  "tag": "Custom Fields"
+ },
+ {
+  "tool": "create_group",
+  "method": "POST",
+  "path": "/v1/customfields/entityType/{entityType}/groups",
+  "operationId": "ExternalApiCustomFieldsGroups_CreateGroup",
+  "tag": "Custom Fields"
+ },
+ {
+  "tool": "get_group",
+  "method": "GET",
+  "path": "/v1/customfields/groups/{groupId}",
+  "operationId": "ExternalApiCustomFieldsGroups_GetGroup",
+  "tag": "Custom Fields"
+ },
+ {
+  "tool": "update_patch_group",
+  "method": "PATCH",
+  "path": "/v1/customfields/groups/{groupId}",
+  "operationId": "ExternalApiCustomFieldsGroups_PatchGroup",
+  "tag": "Custom Fields"
+ },
+ {
+  "tool": "get_file_share_settings_by_id",
+  "method": "GET",
+  "path": "/v1/files/{fileId}/sharing",
+  "operationId": "ExternalApiFileSharing_GetFileShareSettingsById",
+  "tag": "Files"
+ },
+ {
+  "tool": "update_file_sharing_setting",
+  "method": "PUT",
+  "path": "/v1/files/{fileId}/sharing",
+  "operationId": "ExternalApiFileSharing_UpdateFileSharingSetting",
+  "tag": "Files"
+ },
+ {
+  "tool": "get_file_category_by_id",
+  "method": "GET",
+  "path": "/v1/files/categories/{fileCategoryId}",
+  "operationId": "ExternalApiFileCategories_GetFileCategoryById",
+  "tag": "Files"
+ },
+ {
+  "tool": "create_upload_request_async",
+  "method": "POST",
+  "path": "/v1/files/uploads",
+  "operationId": "ExternalApiFilesUploads_CreateUploadRequestAsync",
+  "tag": "Files"
+ },
+ {
+  "tool": "get_general_ledger_entries",
+  "method": "GET",
+  "path": "/v1/generalledger",
+  "operationId": "ExternalApiGeneralLedger_GetGeneralLedgerEntries",
+  "tag": "General Ledger"
+ },
+ {
+  "tool": "create_general_journal_entry",
+  "method": "POST",
+  "path": "/v1/generalledger/journalentries",
+  "operationId": "ExternalApiGeneralLedgerJournalEntries_CreateGeneralJournalEntry",
+  "tag": "General Ledger"
+ },
+ {
+  "tool": "update_general_journal_entry",
+  "method": "PUT",
+  "path": "/v1/generalledger/journalentries/{journalEntryId}",
+  "operationId": "ExternalApiGeneralLedgerJournalEntries_UpdateGeneralJournalEntry",
+  "tag": "General Ledger"
+ },
+ {
+  "tool": "get_all_transactions",
+  "method": "GET",
+  "path": "/v1/generalledger/transactions",
+  "operationId": "ExternalApiGeneralLedgerTransactions_GetAllTransactions",
+  "tag": "General Ledger"
+ },
+ {
+  "tool": "get_transaction_by_id",
+  "method": "GET",
+  "path": "/v1/generalledger/transactions/{transactionId}",
+  "operationId": "ExternalApiGeneralLedgerTransactions_GetTransactionById",
+  "tag": "General Ledger"
+ },
+ {
+  "tool": "get_all_gl_accounts",
+  "method": "GET",
+  "path": "/v1/glaccounts",
+  "operationId": "ExternalApiGeneralLedgerAccounts_GetAllGLAccounts",
+  "tag": "General Ledger"
+ },
+ {
+  "tool": "create_general_ledger_account",
+  "method": "POST",
+  "path": "/v1/glaccounts",
+  "operationId": "ExternalApiGeneralLedgerAccounts_CreateGeneralLedgerAccount",
+  "tag": "General Ledger"
+ },
+ {
+  "tool": "get_gl_account_by_id",
+  "method": "GET",
+  "path": "/v1/glaccounts/{glAccountId}",
+  "operationId": "ExternalApiGeneralLedgerAccounts_GetGlAccountById",
+  "tag": "General Ledger"
+ },
+ {
+  "tool": "update_gl_account",
+  "method": "PUT",
+  "path": "/v1/glaccounts/{glAccountId}",
+  "operationId": "ExternalApiGeneralLedgerAccounts_UpdateGLAccount",
+  "tag": "General Ledger"
+ },
+ {
+  "tool": "get_gl_account_balances",
+  "method": "GET",
+  "path": "/v1/glaccounts/balances",
+  "operationId": "ExternalApiGLAccountBalances_GetGlAccountBalances",
+  "tag": "General Ledger"
+ },
+ {
+  "tool": "get_lease_epay_settings_by_id",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/epaysettings",
+  "operationId": "ExternalApiLeaseEpaySettings_GetLeaseEpaySettingsById",
+  "tag": "Leases"
+ },
+ {
+  "tool": "update_lease_epay_settings",
+  "method": "PUT",
+  "path": "/v1/leases/{leaseId}/epaysettings",
+  "operationId": "ExternalApiLeaseEpaySettings_UpdateLeaseEpaySettings",
+  "tag": "Leases"
+ },
+ {
+  "tool": "get_lease_partial_payment_settings",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/partialpaymentsettings",
+  "operationId": "ExternalApiLeasePartialPaymentSettings_GetLeasePartialPaymentSettings",
+  "tag": "Leases"
+ },
+ {
+  "tool": "update_patch_lease_partial_payment_settings",
+  "method": "PATCH",
+  "path": "/v1/leases/{leaseId}/partialpaymentsettings",
+  "operationId": "ExternalApiLeaseUpdatePartialPaymentSettings_PatchLeasePartialPaymentSettings",
+  "tag": "Leases"
+ },
+ {
+  "tool": "create_lease_charge_recurring_transaction",
+  "method": "POST",
+  "path": "/v1/leases/{leaseId}/recurringcharges",
+  "operationId": "ExternalApiLeaseChargeRecurringTransactions_CreateLeaseChargeRecurringTransaction",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "get_lease_charge_recurring_transaction_by_id",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/recurringcharges/{transactionId}",
+  "operationId": "ExternalApiLeaseChargeRecurringTransactions_GetLeaseChargeRecurringTransactionById",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "create_lease_credit_recurring_transaction",
+  "method": "POST",
+  "path": "/v1/leases/{leaseId}/recurringcredits",
+  "operationId": "ExternalApiLeaseRecurringCredits_CreateLeaseCreditRecurringTransaction",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "get_lease_recurring_credit_by_id",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/recurringcredits/{transactionId}",
+  "operationId": "ExternalApiLeaseRecurringCredits_GetLeaseRecurringCreditById",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "create_lease_recurring_payment",
+  "method": "POST",
+  "path": "/v1/leases/{leaseId}/recurringpayments",
+  "operationId": "ExternalApiLeaseRecurringPayments_CreateLeaseRecurringPayment",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "get_recurring_lease_payments_by_id",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/recurringpayments/{paymentId}",
+  "operationId": "ExternalApiLeaseRecurringPayments_GetRecurringLeasePaymentsById",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "get_rent",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/rent",
+  "operationId": "ExternalApiLeaseRent_GetRent",
+  "tag": "Leases"
+ },
+ {
+  "tool": "create_rent_schedule",
+  "method": "POST",
+  "path": "/v1/leases/{leaseId}/rent",
+  "operationId": "ExternalApiLeaseRent_CreateRentSchedule",
+  "tag": "Leases"
+ },
+ {
+  "tool": "get_rent_by_id",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/rent/{rentId}",
+  "operationId": "ExternalApiLeaseRent_GetRentById",
+  "tag": "Leases"
+ },
+ {
+  "tool": "update_rent_schedule",
+  "method": "PUT",
+  "path": "/v1/leases/{leaseId}/rent/{rentId}",
+  "operationId": "ExternalApiLeaseRent_UpdateRentSchedule",
+  "tag": "Leases"
+ },
+ {
+  "tool": "get_renters_insurance_policies",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/rentersinsurance",
+  "operationId": "ExternalApiRentersInsurance_GetRentersInsurancePolicies",
+  "tag": "Leases"
+ },
+ {
+  "tool": "get_renters_insurance_policy_by_id",
+  "method": "GET",
+  "path": "/v1/leases/{leaseId}/rentersinsurance/{policyId}",
+  "operationId": "ExternalApiRentersInsurance_GetRentersInsurancePolicyById",
+  "tag": "Leases"
+ },
+ {
+  "tool": "get_recurring_transactions_for_all_leases",
+  "method": "GET",
+  "path": "/v1/leases/recurringtransactions",
+  "operationId": "ExternalApiLeaseRecurringTransactions_GetRecurringTransactionsForAllLeases",
+  "tag": "Lease Transactions"
+ },
+ {
+  "tool": "get_lease_renewal_history",
+  "method": "GET",
+  "path": "/v1/leases/renewalhistory",
+  "operationId": "ExternalApiLeaseRenewalsRead_GetLeaseRenewalHistory",
+  "tag": "Leases"
+ },
+ {
+  "tool": "get_rent_paged",
+  "method": "GET",
+  "path": "/v1/leases/rent",
+  "operationId": "ExternalApiLeaseRent_GetRentPaged",
+  "tag": "Leases"
+ },
+ {
+  "tool": "get_all_tenant_notes",
+  "method": "GET",
+  "path": "/v1/leases/tenants/{tenantId}/notes",
+  "operationId": "ExternalApiTenantNotes_GetAllTenantNotes",
+  "tag": "Rental Tenants"
+ },
+ {
+  "tool": "create_tenant_note",
+  "method": "POST",
+  "path": "/v1/leases/tenants/{tenantId}/notes",
+  "operationId": "ExternalApiTenantNotes_CreateTenantNote",
+  "tag": "Rental Tenants"
+ },
+ {
+  "tool": "get_tenant_note_by_id",
+  "method": "GET",
+  "path": "/v1/leases/tenants/{tenantId}/notes/{noteId}",
+  "operationId": "ExternalApiTenantNotes_GetTenantNoteById",
+  "tag": "Rental Tenants"
+ },
+ {
+  "tool": "update_lease_tenant_note",
+  "method": "PUT",
+  "path": "/v1/leases/tenants/{tenantId}/notes/{noteId}",
+  "operationId": "ExternalApiTenantNotes_UpdateLeaseTenantNote",
+  "tag": "Rental Tenants"
+ },
+ {
+  "tool": "get_property_groups",
+  "method": "GET",
+  "path": "/v1/propertygroups",
+  "operationId": "ExternalApiPropertyGroups_GetPropertyGroups",
+  "tag": "Property Groups"
+ },
+ {
+  "tool": "create_property_group",
+  "method": "POST",
+  "path": "/v1/propertygroups",
+  "operationId": "ExternalApiPropertyGroups_CreatePropertyGroup",
+  "tag": "Property Groups"
+ },
+ {
+  "tool": "get_property_group_by_id",
+  "method": "GET",
+  "path": "/v1/propertygroups/{propertyGroupId}",
+  "operationId": "ExternalApiPropertyGroups_GetPropertyGroupById",
+  "tag": "Property Groups"
+ },
+ {
+  "tool": "update_property_group",
+  "method": "PUT",
+  "path": "/v1/propertygroups/{propertyGroupId}",
+  "operationId": "ExternalApiPropertyGroups_UpdatePropertyGroup",
+  "tag": "Property Groups"
+ },
+ {
+  "tool": "get_features_by_rental_property_id",
+  "method": "GET",
+  "path": "/v1/rentals/{propertyId}/amenities",
+  "operationId": "ExternalApiRentalFeatures_GetFeaturesByRentalPropertyId",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "update_rental_features",
+  "method": "PUT",
+  "path": "/v1/rentals/{propertyId}/amenities",
+  "operationId": "ExternalApiRentalFeatures_UpdateRentalFeatures",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "get_e_pay_settings_for_rental_property",
+  "method": "GET",
+  "path": "/v1/rentals/{propertyId}/epaysettings",
+  "operationId": "ExternalApiRentalEpaySettings_GetEPaySettingsForRentalProperty",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "update_e_pay_settings_for_rental",
+  "method": "PUT",
+  "path": "/v1/rentals/{propertyId}/epaysettings",
+  "operationId": "ExternalApiRentalEpaySettings_UpdateEPaySettingsForRental",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "get_rental_images",
+  "method": "GET",
+  "path": "/v1/rentals/{propertyId}/images",
+  "operationId": "ExternalApiRentalImages_GetRentalImages",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "get_rental_image_by_id",
+  "method": "GET",
+  "path": "/v1/rentals/{propertyId}/images/{imageId}",
+  "operationId": "ExternalApiRentalImages_GetRentalImageById",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "update_rental_image",
+  "method": "PUT",
+  "path": "/v1/rentals/{propertyId}/images/{imageId}",
+  "operationId": "ExternalApiRentalImages_UpdateRentalImage",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "delete_rental_image",
+  "method": "DELETE",
+  "path": "/v1/rentals/{propertyId}/images/{imageId}",
+  "operationId": "ExternalApiRentalImages_DeleteRentalImage",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "create_get_rental_image_download_url_by_id",
+  "method": "POST",
+  "path": "/v1/rentals/{propertyId}/images/{imageId}/downloadrequests",
+  "operationId": "ExternalApiRentalImageDownloadRequests_GetRentalImageDownloadUrlById",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "update_reorder_rental_images",
+  "method": "PUT",
+  "path": "/v1/rentals/{propertyId}/images/order",
+  "operationId": "ExternalApiRentalImageOrder_ReorderRentalImages",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "create_upload_request_async_rental_properties",
+  "method": "POST",
+  "path": "/v1/rentals/{propertyId}/images/uploads",
+  "operationId": "ExternalApiRentalImageUploadRequests_CreateUploadRequestAsync",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "create_video_link_request",
+  "method": "POST",
+  "path": "/v1/rentals/{propertyId}/images/videolinkrequests",
+  "operationId": "ExternalApiRentalImageVideoLinkRequests_CreateVideoLinkRequest",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "get_meter_readings_for_rental",
+  "method": "GET",
+  "path": "/v1/rentals/{propertyId}/meterreadings",
+  "operationId": "ExternalApiRentalMeterReadingsRead_GetMeterReadingsForRental",
+  "tag": "Rental Meter Readings"
+ },
+ {
+  "tool": "get_meter_reading_details_for_rental_async",
+  "method": "GET",
+  "path": "/v1/rentals/{propertyId}/meterreadings/summary",
+  "operationId": "ExternalApiRentalMeterReadingDetails_GetMeterReadingDetailsForRentalAsync",
+  "tag": "Rental Meter Readings"
+ },
+ {
+  "tool": "update_upsert_meter_reading_details_for_rental_async",
+  "method": "PUT",
+  "path": "/v1/rentals/{propertyId}/meterreadings/summary",
+  "operationId": "ExternalApiRentalMeterReadingDetailsUpsert_UpsertMeterReadingDetailsForRentalAsync",
+  "tag": "Rental Meter Readings"
+ },
+ {
+  "tool": "delete_meter_reading_details_for_rental",
+  "method": "DELETE",
+  "path": "/v1/rentals/{propertyId}/meterreadings/summary",
+  "operationId": "ExternalApiRentalDeleteMeterReadingDetails_DeleteMeterReadingDetailsForRental",
+  "tag": "Rental Meter Readings"
+ },
+ {
+  "tool": "get_rental_notes",
+  "method": "GET",
+  "path": "/v1/rentals/{propertyId}/notes",
+  "operationId": "ExternalApiRentalNotes_GetRentalNotes",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "create_rental_property_note",
+  "method": "POST",
+  "path": "/v1/rentals/{propertyId}/notes",
+  "operationId": "ExternalApiRentalNotes_CreateRentalPropertyNote",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "get_rental_note_by_note_id",
+  "method": "GET",
+  "path": "/v1/rentals/{propertyId}/notes/{noteId}",
+  "operationId": "ExternalApiRentalNotes_GetRentalNoteByNoteId",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "update_rental_property_note",
+  "method": "PUT",
+  "path": "/v1/rentals/{propertyId}/notes/{noteId}",
+  "operationId": "ExternalApiRentalNotes_UpdateRentalPropertyNote",
+  "tag": "Rental Properties"
+ },
+ {
+  "tool": "get_rental_appliances",
+  "method": "GET",
+  "path": "/v1/rentals/appliances",
+  "operationId": "ExternalApiRentalAppliances_GetRentalAppliances",
+  "tag": "Rental Appliances"
+ },
+ {
+  "tool": "create_rental_appliance",
+  "method": "POST",
+  "path": "/v1/rentals/appliances",
+  "operationId": "ExternalApiRentalAppliances_CreateRentalAppliance",
+  "tag": "Rental Appliances"
+ },
+ {
+  "tool": "get_rental_appliance_by_id",
+  "method": "GET",
+  "path": "/v1/rentals/appliances/{applianceId}",
+  "operationId": "ExternalApiRentalAppliances_GetRentalApplianceById",
+  "tag": "Rental Appliances"
+ },
+ {
+  "tool": "update_rental_appliance",
+  "method": "PUT",
+  "path": "/v1/rentals/appliances/{applianceId}",
+  "operationId": "ExternalApiRentalAppliances_UpdateRentalAppliance",
+  "tag": "Rental Appliances"
+ },
+ {
+  "tool": "delete_rental_appliances",
+  "method": "DELETE",
+  "path": "/v1/rentals/appliances/{applianceId}",
+  "operationId": "ExternalApiRentalAppliances_DeleteRentalAppliances",
+  "tag": "Rental Appliances"
+ },
+ {
+  "tool": "get_rental_appliance_service_history",
+  "method": "GET",
+  "path": "/v1/rentals/appliances/{applianceId}/servicehistory",
+  "operationId": "ExternalApiRentalApplianceServiceHistory_GetRentalApplianceServiceHistory",
+  "tag": "Rental Appliances"
+ },
+ {
+  "tool": "create_rental_appliance_service_history",
+  "method": "POST",
+  "path": "/v1/rentals/appliances/{applianceId}/servicehistory",
+  "operationId": "ExternalApiRentalApplianceServiceHistory_CreateRentalApplianceServiceHistory",
+  "tag": "Rental Appliances"
+ },
+ {
+  "tool": "get_rental_appliance_service_history_by_id",
+  "method": "GET",
+  "path": "/v1/rentals/appliances/{applianceId}/servicehistory/{serviceHistoryId}",
+  "operationId": "ExternalApiRentalApplianceServiceHistory_GetRentalApplianceServiceHistoryById",
+  "tag": "Rental Appliances"
+ },
+ {
+  "tool": "get_rental_owner_notes",
+  "method": "GET",
+  "path": "/v1/rentals/owners/{rentalOwnerId}/notes",
+  "operationId": "ExternalApiRentalOwnerNotes_GetRentalOwnerNotes",
+  "tag": "Rental Owners"
+ },
+ {
+  "tool": "create_rental_owner_note",
+  "method": "POST",
+  "path": "/v1/rentals/owners/{rentalOwnerId}/notes",
+  "operationId": "ExternalApiRentalOwnerNotes_CreateRentalOwnerNote",
+  "tag": "Rental Owners"
+ },
+ {
+  "tool": "get_rental_owner_note_by_id",
+  "method": "GET",
+  "path": "/v1/rentals/owners/{rentalOwnerId}/notes/{noteId}",
+  "operationId": "ExternalApiRentalOwnerNotes_GetRentalOwnerNoteById",
+  "tag": "Rental Owners"
+ },
+ {
+  "tool": "update_rental_owner_note",
+  "method": "PUT",
+  "path": "/v1/rentals/owners/{rentalOwnerId}/notes/{noteId}",
+  "operationId": "ExternalApiRentalOwnerNotes_UpdateRentalOwnerNote",
+  "tag": "Rental Owners"
+ },
+ {
+  "tool": "get_features_for_rental_unit_by_id",
+  "method": "GET",
+  "path": "/v1/rentals/units/{unitId}/amenities",
+  "operationId": "ExternalApiRentalUnitAmenities_GetFeaturesForRentalUnitById",
+  "tag": "Rental Units"
+ },
+ {
+  "tool": "update_rental_unit_features",
+  "method": "PUT",
+  "path": "/v1/rentals/units/{unitId}/amenities",
+  "operationId": "ExternalApiRentalUnitAmenities_UpdateRentalUnitFeatures",
+  "tag": "Rental Units"
+ },
+ {
+  "tool": "get_rental_unit_images",
+  "method": "GET",
+  "path": "/v1/rentals/units/{unitId}/images",
+  "operationId": "ExternalApiRentalUnitImages_GetRentalUnitImages",
+  "tag": "Rental Units"
+ },
+ {
+  "tool": "get_rental_unit_image_by_id",
+  "method": "GET",
+  "path": "/v1/rentals/units/{unitId}/images/{imageId}",
+  "operationId": "ExternalApiRentalUnitImages_GetRentalUnitImageById",
+  "tag": "Rental Units"
+ },
+ {
+  "tool": "update_rental_unit_image",
+  "method": "PUT",
+  "path": "/v1/rentals/units/{unitId}/images/{imageId}",
+  "operationId": "ExternalApiRentalUnitImages_UpdateRentalUnitImage",
+  "tag": "Rental Units"
+ },
+ {
+  "tool": "delete_rental_unit_image",
+  "method": "DELETE",
+  "path": "/v1/rentals/units/{unitId}/images/{imageId}",
+  "operationId": "ExternalApiRentalUnitImages_DeleteRentalUnitImage",
+  "tag": "Rental Units"
+ },
+ {
+  "tool": "create_get_rental_unit_image_download_url_by_id",
+  "method": "POST",
+  "path": "/v1/rentals/units/{unitId}/images/{imageId}/downloadrequests",
+  "operationId": "ExternalApiRentalUnitImageDownloadRequests_GetRentalUnitImageDownloadUrlById",
+  "tag": "Rental Units"
+ },
+ {
+  "tool": "update_reorder_rental_unit_images",
+  "method": "PUT",
+  "path": "/v1/rentals/units/{unitId}/images/order",
+  "operationId": "ExternalApiRentalUnitImageOrder_ReorderRentalUnitImages",
+  "tag": "Rental Units"
+ },
+ {
+  "tool": "create_upload_request_async_rental_units",
+  "method": "POST",
+  "path": "/v1/rentals/units/{unitId}/images/uploads",
+  "operationId": "ExternalApiRentalUnitImageUploadRequests_CreateUploadRequestAsync",
+  "tag": "Rental Units"
+ },
+ {
+  "tool": "create_unit_video_link_request",
+  "method": "POST",
+  "path": "/v1/rentals/units/{unitId}/images/videolinkrequests",
+  "operationId": "ExternalApiRentalUnitImageVideoLinkRequests_CreateUnitVideoLinkRequest",
+  "tag": "Rental Units"
+ },
+ {
+  "tool": "get_rental_unit_notes",
+  "method": "GET",
+  "path": "/v1/rentals/units/{unitId}/notes",
+  "operationId": "ExternalApiRentalUnitNotes_GetRentalUnitNotes",
+  "tag": "Rental Units"
+ },
+ {
+  "tool": "create_rental_unit_note",
+  "method": "POST",
+  "path": "/v1/rentals/units/{unitId}/notes",
+  "operationId": "ExternalApiRentalUnitNotes_CreateRentalUnitNote",
+  "tag": "Rental Units"
+ },
+ {
+  "tool": "get_rental_unit_note_by_note_id",
+  "method": "GET",
+  "path": "/v1/rentals/units/{unitId}/notes/{noteId}",
+  "operationId": "ExternalApiRentalUnitNotes_GetRentalUnitNoteByNoteId",
+  "tag": "Rental Units"
+ },
+ {
+  "tool": "update_note_for_rental_unit",
+  "method": "PUT",
+  "path": "/v1/rentals/units/{unitId}/notes/{noteId}",
+  "operationId": "ExternalApiRentalUnitNotes_UpdateNoteForRentalUnit",
+  "tag": "Rental Units"
+ },
+ {
+  "tool": "get_resident_center_users",
+  "method": "GET",
+  "path": "/v1/residentCenterUsers",
+  "operationId": "ExternalApiResidentCenterUsers_GetResidentCenterUsers",
+  "tag": "Resident Center"
+ },
+ {
+  "tool": "get_retail_cash_users",
+  "method": "GET",
+  "path": "/v1/retailcashusers",
+  "operationId": "ExternalApiRetailCashRead_GetRetailCashUsers",
+  "tag": "Resident Center"
+ },
+ {
+  "tool": "get_retail_cash_user",
+  "method": "GET",
+  "path": "/v1/retailcashusers/{userId}/{unitAgreementId}",
+  "operationId": "ExternalApiRetailCashRead_GetRetailCashUser",
+  "tag": "Resident Center"
+ },
+ {
+  "tool": "update_retail_cash_user",
+  "method": "PUT",
+  "path": "/v1/retailcashusers/{userId}/{unitAgreementId}",
+  "operationId": "ExternalApiRetailCashWrite_UpdateRetailCashUser",
+  "tag": "Resident Center"
+ },
+ {
+  "tool": "get_task_histories",
+  "method": "GET",
+  "path": "/v1/tasks/{taskId}/history",
+  "operationId": "ExternalApiTaskHistory_GetTaskHistories",
+  "tag": "Tasks"
+ },
+ {
+  "tool": "get_task_history_by_id",
+  "method": "GET",
+  "path": "/v1/tasks/{taskId}/history/{taskHistoryId}",
+  "operationId": "ExternalApiTaskHistory_GetTaskHistoryById",
+  "tag": "Tasks"
+ },
+ {
+  "tool": "update_task_history",
+  "method": "PUT",
+  "path": "/v1/tasks/{taskId}/history/{taskHistoryId}",
+  "operationId": "ExternalApiTaskHistory_UpdateTaskHistory",
+  "tag": "Tasks"
+ },
+ {
+  "tool": "get_all_task_history_files",
+  "method": "GET",
+  "path": "/v1/tasks/{taskId}/history/{taskHistoryId}/files",
+  "operationId": "ExternalApiTaskHistoryFiles_GetAllTaskHistoryFiles",
+  "tag": "Tasks"
+ },
+ {
+  "tool": "get_task_history_file_by_id",
+  "method": "GET",
+  "path": "/v1/tasks/{taskId}/history/{taskHistoryId}/files/{fileId}",
+  "operationId": "ExternalApiTaskHistoryFiles_GetTaskHistoryFileById",
+  "tag": "Tasks"
+ },
+ {
+  "tool": "delete_task_history_file",
+  "method": "DELETE",
+  "path": "/v1/tasks/{taskId}/history/{taskHistoryId}/files/{fileId}",
+  "operationId": "ExternalApiTaskHistoryFiles_DeleteTaskHistoryFile",
+  "tag": "Tasks"
+ },
+ {
+  "tool": "create_get_file_download_request",
+  "method": "POST",
+  "path": "/v1/tasks/{taskId}/history/{taskHistoryId}/files/{fileId}/downloadrequest",
+  "operationId": "ExternalApiTaskHistoryFileDownloads_GetFileDownloadRequest",
+  "tag": "Tasks"
+ },
+ {
+  "tool": "create_upload_request_async_tasks",
+  "method": "POST",
+  "path": "/v1/tasks/{taskId}/history/{taskHistoryId}/files/uploads",
+  "operationId": "ExternalApiTaskHistoryFileUploads_CreateUploadRequestAsync",
+  "tag": "Tasks"
+ },
+ {
+  "tool": "get_task_category_by_id",
+  "method": "GET",
+  "path": "/v1/tasks/categories/{taskCategoryId}",
+  "operationId": "ExternalApiTaskCategories_GetTaskCategoryById",
+  "tag": "Tasks"
+ },
+ {
+  "tool": "get_contact_request_tasks",
+  "method": "GET",
+  "path": "/v1/tasks/contactrequests",
+  "operationId": "ExternalApiContactRequestTasks_GetContactRequestTasks",
+  "tag": "Contact Requests"
+ },
+ {
+  "tool": "create_contact_request_task",
+  "method": "POST",
+  "path": "/v1/tasks/contactrequests",
+  "operationId": "ExternalApiContactRequestTasks_CreateContactRequestTask",
+  "tag": "Contact Requests"
+ },
+ {
+  "tool": "get_contact_request_task_by_id",
+  "method": "GET",
+  "path": "/v1/tasks/contactrequests/{contactRequestTaskId}",
+  "operationId": "ExternalApiContactRequestTasks_GetContactRequestTaskById",
+  "tag": "Contact Requests"
+ },
+ {
+  "tool": "update_contact_request_task",
+  "method": "PUT",
+  "path": "/v1/tasks/contactrequests/{contactRequestTaskId}",
+  "operationId": "ExternalApiContactRequestTasks_UpdateContactRequestTask",
+  "tag": "Contact Requests"
+ },
+ {
+  "tool": "get_all_rental_owner_request_tasks",
+  "method": "GET",
+  "path": "/v1/tasks/rentalownerrequests",
+  "operationId": "ExternalApiRentalOwnerRequestTasks_GetAllRentalOwnerRequestTasks",
+  "tag": "Rental Owner Requests"
+ },
+ {
+  "tool": "create_rental_owner_request_task",
+  "method": "POST",
+  "path": "/v1/tasks/rentalownerrequests",
+  "operationId": "ExternalApiRentalOwnerRequestTasks_CreateRentalOwnerRequestTask",
+  "tag": "Rental Owner Requests"
+ },
+ {
+  "tool": "get_rental_owner_request_task_by_id",
+  "method": "GET",
+  "path": "/v1/tasks/rentalownerrequests/{rentalOwnerRequestTaskId}",
+  "operationId": "ExternalApiRentalOwnerRequestTasks_GetRentalOwnerRequestTaskById",
+  "tag": "Rental Owner Requests"
+ },
+ {
+  "tool": "update_rental_owner_request_task",
+  "method": "PUT",
+  "path": "/v1/tasks/rentalownerrequests/{rentalOwnerRequestTaskId}",
+  "operationId": "ExternalApiRentalOwnerRequestTasks_UpdateRentalOwnerRequestTask",
+  "tag": "Rental Owner Requests"
+ },
+ {
+  "tool": "get_rental_owner_request_task_contribution_data",
+  "method": "GET",
+  "path": "/v1/tasks/rentalownerrequests/{rentalOwnerRequestTaskId}/contributiondata",
+  "operationId": "ExternalApiRentalOwnerRequestTasks_GetRentalOwnerRequestTaskContributionData",
+  "tag": "Rental Owner Requests"
+ },
+ {
+  "tool": "update_rental_owner_request_task_contribution_data",
+  "method": "PUT",
+  "path": "/v1/tasks/rentalownerrequests/{rentalOwnerRequestTaskId}/contributiondata",
+  "operationId": "ExternalApiRentalOwnerRequestTasks_UpdateRentalOwnerRequestTaskContributionData",
+  "tag": "Rental Owner Requests"
+ },
+ {
+  "tool": "get_resident_request_tasks",
+  "method": "GET",
+  "path": "/v1/tasks/residentrequests",
+  "operationId": "ExternalApiResidentRequestTasks_GetResidentRequestTasks",
+  "tag": "Resident Requests"
+ },
+ {
+  "tool": "create_resource",
+  "method": "POST",
+  "path": "/v1/tasks/residentrequests",
+  "operationId": "ExternalApiResidentRequestTasks_CreateResource",
+  "tag": "Resident Requests"
+ },
+ {
+  "tool": "get_resident_request_task",
+  "method": "GET",
+  "path": "/v1/tasks/residentrequests/{residentRequestTaskId}",
+  "operationId": "ExternalApiResidentRequestTasks_GetResidentRequestTask",
+  "tag": "Resident Requests"
+ },
+ {
+  "tool": "update_resource",
+  "method": "PUT",
+  "path": "/v1/tasks/residentrequests/{residentRequestTaskId}",
+  "operationId": "ExternalApiResidentRequestTasks_UpdateResource",
+  "tag": "Resident Requests"
+ },
+ {
+  "tool": "get_to_do_tasks",
+  "method": "GET",
+  "path": "/v1/tasks/todorequests",
+  "operationId": "ExternalApiToDoTasks_GetToDoTasks",
+  "tag": "To Do Requests"
+ },
+ {
+  "tool": "create_to_do_task",
+  "method": "POST",
+  "path": "/v1/tasks/todorequests",
+  "operationId": "ExternalApiToDoTasks_CreateToDoTask",
+  "tag": "To Do Requests"
+ },
+ {
+  "tool": "get_to_do_task_by_id",
+  "method": "GET",
+  "path": "/v1/tasks/todorequests/{toDoTaskId}",
+  "operationId": "ExternalApiToDoTasks_GetToDoTaskById",
+  "tag": "To Do Requests"
+ },
+ {
+  "tool": "update_to_do_task",
+  "method": "PUT",
+  "path": "/v1/tasks/todorequests/{toDoTaskId}",
+  "operationId": "ExternalApiToDoTasks_UpdateToDoTask",
+  "tag": "To Do Requests"
+ },
+ {
+  "tool": "create_vendor_credit",
+  "method": "POST",
+  "path": "/v1/vendors/{vendorId}/credits",
+  "operationId": "ExternalApiVendorCreditsWrite_CreateVendorCredit",
+  "tag": "Vendors"
+ },
+ {
+  "tool": "get_vendor_credit",
+  "method": "GET",
+  "path": "/v1/vendors/{vendorId}/credits/{vendorCreditId}",
+  "operationId": "ExternalApiVendorCredits_GetVendorCredit",
+  "tag": "Vendors"
+ },
+ {
+  "tool": "get_vendor_notes",
+  "method": "GET",
+  "path": "/v1/vendors/{vendorId}/notes",
+  "operationId": "ExternalApiVendorNotes_GetVendorNotes",
+  "tag": "Vendors"
+ },
+ {
+  "tool": "create_vendor_note",
+  "method": "POST",
+  "path": "/v1/vendors/{vendorId}/notes",
+  "operationId": "ExternalApiVendorNotes_CreateVendorNote",
+  "tag": "Vendors"
+ },
+ {
+  "tool": "get_vendor_note_by_note_id",
+  "method": "GET",
+  "path": "/v1/vendors/{vendorId}/notes/{noteId}",
+  "operationId": "ExternalApiVendorNotes_GetVendorNoteByNoteId",
+  "tag": "Vendors"
+ },
+ {
+  "tool": "update_vendor_note",
+  "method": "PUT",
+  "path": "/v1/vendors/{vendorId}/notes/{noteId}",
+  "operationId": "ExternalApiVendorNotes_UpdateVendorNote",
+  "tag": "Vendors"
+ },
+ {
+  "tool": "create_vendor_refund",
+  "method": "POST",
+  "path": "/v1/vendors/{vendorId}/refunds",
+  "operationId": "ExternalApiVendorRefundsWrite_CreateVendorRefund",
+  "tag": "Vendors"
+ },
+ {
+  "tool": "get_vendor_refund",
+  "method": "GET",
+  "path": "/v1/vendors/{vendorId}/refunds/{vendorRefundId}",
+  "operationId": "ExternalApiVendorRefunds_GetVendorRefund",
+  "tag": "Vendors"
+ },
+ {
+  "tool": "get_all_vendor_transactions",
+  "method": "GET",
+  "path": "/v1/vendors/{vendorId}/transactions",
+  "operationId": "ExternalApiVendorTransactions_GetAllVendorTransactions",
+  "tag": "Vendors"
+ },
+ {
+  "tool": "get_vendor_category_by_id",
+  "method": "GET",
+  "path": "/v1/vendors/categories/{vendorCategoryId}",
+  "operationId": "ExternalApiVendorCategories_GetVendorCategoryById",
+  "tag": "Vendors"
+ },
+ {
+  "tool": "get_all_work_orders",
+  "method": "GET",
+  "path": "/v1/workorders",
+  "operationId": "ExternalApiWorkOrders_GetAllWorkOrders",
+  "tag": "Work Orders"
+ },
+ {
+  "tool": "create_work_order",
+  "method": "POST",
+  "path": "/v1/workorders",
+  "operationId": "ExternalApiWorkOrders_CreateWorkOrder",
+  "tag": "Work Orders"
+ },
+ {
+  "tool": "get_work_order_by_id",
+  "method": "GET",
+  "path": "/v1/workorders/{workOrderId}",
+  "operationId": "ExternalApiWorkOrders_GetWorkOrderById",
+  "tag": "Work Orders"
+ },
+ {
+  "tool": "update_work_order",
+  "method": "PUT",
+  "path": "/v1/workorders/{workOrderId}",
+  "operationId": "ExternalApiWorkOrders_UpdateWorkOrder",
+  "tag": "Work Orders"
+ }
+]
