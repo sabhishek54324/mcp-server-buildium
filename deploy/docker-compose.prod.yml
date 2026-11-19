@@ -22,6 +22,10 @@ services:
     # (the Buildium SANDBOX, see the Dockerfile) is used. Live is https://api.buildium.com (no /v1).
     environment:
       MCP_PORT: "8000"
+      # What the agents see (2026-11-19): reads only, property-management areas only.
+      # The server code has every Buildium operation (468 tools); these two settings choose the exposure.
+      BUILDIUM_TOOL_ACCESS: "read"
+      BUILDIUM_TOOL_TAGS: "Leases,Lease Transactions,Rental Properties,Rental Units,Rental Tenants,Rental Owners,Work Orders,Tasks,Resident Requests,Rental Owner Requests,To Do Requests,Listings,Vendors,Bills,General Ledger,Bank Accounts,Rental Appliances,Rental Meter Readings,Property Groups,Files"
     expose:
       - "8000"
 
